@@ -1,23 +1,144 @@
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
 
 
+/*********************************
+Header
+**********************************/
+
+header{
+
+    background-color: #8E4433;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    margin: -1em -1em 0 -1em ;
+    padding: 2em;
+}
+
+#menu{
+    list-style: none; /* Tar bort punkter */
+
+}
 
 
+li,a{
+    text-decoration: none; /* Tar bort understräck */
+    color: white;
+}
 
+.logo{
+    width: 177px;
+    height: 55px;
+    margin-right: auto; /* Det flyttar loggan till vänster */
+}
+
+.cart {
+    width: 43px;
+    height: 42px;
+}
+
+/*********************************
+Body
+**********************************/
+/* 
+.container{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.vänsterSida{
+
+    flex:2;
+}
+
+.högerSida{
+    flex: 1;
+    padding-left: 1.5em;
+}
+*/
+
+.container {
+    display: grid;
+}
+
+.square{
+
+    width: 456px;
+    height: 477px;
+    flex-shrink: 0;
+    border-radius: 0% 20% 0% 20%;
+    background: #8E4433;
+}
+
+.förstaRubrik{
+    color: #CBA84E;
+    font-family: Poppins;
+    font-size: 5em;
+    font-weight: 600;
+    line-height: normal;
+    margin:0;
+}
+
+.andraRubrik{
+    color: #8E4433;
+    font-family: Poppins;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin:0;
+    margin-top: -36px;
+}
+
+.texten{
+
+    font-size: 1.5em;
+}
+
+/*********************************
+Footer
+**********************************/
+
+footer{
+    background-color: #8E4433;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom:0;    
+    width: 100%;
+    margin: 0 -1em 0 0;
+    text-align: center;
+    color: white;
+}
 
 
 @media only screen and (min-width: 1280px) {
     /* CSS for 1280px and more */
     
-    .item1 {
-        grid-column: 1;
-        grid-row: 1 / span 2;
-    }
+   #menu li{
+    display: inline;
     
-    .item2 {
-        grid-column: 2 / span 2;
-        grid-row: 1;
-        align-self: center;
-   
+   }
+
+   .vänsterSida {
+    grid-column: 1;
+    grid-row: 1;
+   }
+
+   .högerSida{
+    grid-column: 2;
+    grid-row: 1;
+   }
+
+   footer{
+    position:absolute;
+
 }
+
+
 }
