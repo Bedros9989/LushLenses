@@ -253,7 +253,7 @@ Små skärmar
 **********************************/
 
     @media (max-width:768px) {
-      .hamburger{
+      .hamburger {
         display: block;
         order:1;
         margin-left: 20px;
@@ -276,6 +276,11 @@ Små skärmar
       #menu.active{
         left: 0;
       }
+
+      #menu-toggle:checked ~ #menu { 
+        display: block;
+    }
+
     
       header{
     
