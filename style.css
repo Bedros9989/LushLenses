@@ -105,9 +105,9 @@ li,a{
   order: 3;
   max-width: 100%; /* Ensure the logo doesn't exceed its container */
   height: auto; /* Maintain the logo's aspect ratio */
-  margin-right: 0;
+  margin-right: 20px;
   padding: 0.5em 0; /* Add padding as needed for spacing */
-  max-height: 60px; /* Set a maximum height for the logo */
+  max-height: 46px; /* Set a maximum height for the logo */
 }
 
 .logo{
