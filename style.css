@@ -1,11 +1,12 @@
 
 *{
+  box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     
 }
 
 body {
-    margin: auto;
+  margin: 0 auto;
 }
 
 /*********************************
@@ -24,6 +25,7 @@ header{
 
 #menu{
     list-style: none; /* Tar bort punkter */
+    padding-right: 30px;
 
 }
 
@@ -36,18 +38,17 @@ li,a{
 }
 
 .logo{
-    width: 177px;
-    height: 55px;
-    margin-right: auto; /* Det flyttar loggan till vänster */
-    padding-left: 2.5em;
+  width: 245px;
+  height: 54px;
+  margin-right: auto;
+  padding-left: 3.5em;
 }
 
 .cart {
-    width: 43px;
-    height: 42px;
-    padding-right: 2.5em;
-    padding-top: 0.5em;
-    padding-left: 2em;
+  width: 81px;
+  height: 47px;
+  padding-right: 2.5em;
+  padding-top: 0.5em;
 }
 
 /*********************************
@@ -55,6 +56,7 @@ Body
 **********************************/
 
 .container {
+  position: relative;
     display: grid;
     margin: 1em 1em 1em 1em;
 }
@@ -103,6 +105,18 @@ Body
 #menu li a:hover{
   color: black;
 }
+
+.glasÖgon {
+  position: absolute;
+  top: 50%; /* Vertically center the image */
+  left: 50%; /* Horizontally center the image */
+  transform: translate(-50%, -50%); /* Center the image precisely */
+  max-width: 110%; /* Ensure the image does not exceed its container's width */
+  max-height: 110%; /* Ensure the image does not exceed its container's height */
+}
+
+
+
 
 /*********************************
 Footer
@@ -222,7 +236,7 @@ Slideshow
   .högerSida{
     grid-column: 2;
     grid-row: 1;
-    padding-right: 1.35em;
+    padding-right: 3em;
  }
 
   footer{
@@ -236,4 +250,15 @@ Slideshow
   border-radius: 0% 20% 0% 20%;
 }
 
+.glasÖgon {
+  position: absolute;
+  top: 50%; /* Vertically center the image */
+  left: 46%; /* Horizontally center the image */
+  transform: translate(-50%, -50%); /* Center the image precisely */
+  max-width: 110%; /* Ensure the image does not exceed its container's width */
+  max-height: 110%; /* Ensure the image does not exceed its container's height */
+}
+
+
     }
+
