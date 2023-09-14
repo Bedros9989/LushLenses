@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
     <link rel="stylesheet" href="style.css"/><!--lägger till stilmallen-->
-    <script src="script.js" defer></script>
+    <script src="kontakt.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 </head>
 <body>
+    <h2>Do you want to get in touch with us? Fill out this form:</h2>
+    
+    <form id="myForm">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="phoneNumber">Phonenumber:</label>
+        <input type="number" id="phoneNumber" name="phoneNumber">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+
+        <label for="message">Message:</label>
+        <textarea name="message"></textarea>
+    </form>
+    
     
 </body>
 </html>
