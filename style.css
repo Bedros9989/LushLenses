@@ -1,10 +1,11 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    
 }
 
 body {
-    margin: 1em;
+    margin: auto;
 }
 
 /*********************************
@@ -17,8 +18,8 @@ header{
     display: flex;
     justify-content: flex-end; 
     align-items: flex-start;
-    margin: -1em -1em 0 -1em ;
-    padding: 2em;
+    margin: 0;
+    padding: 1.25em ;
 }
 
 #menu{
@@ -26,21 +27,27 @@ header{
 
 }
 
-
 li,a{
     text-decoration: none; /* Tar bort understräck */
     color: white;
+    font-size: 1.15em;
+    margin-inline: 0.3em;
+    
 }
 
 .logo{
     width: 177px;
     height: 55px;
     margin-right: auto; /* Det flyttar loggan till vänster */
+    padding-left: 2.5em;
 }
 
 .cart {
     width: 43px;
     height: 42px;
+    padding-right: 2.5em;
+    padding-top: 0.5em;
+    padding-left: 2em;
 }
 
 /*********************************
@@ -54,27 +61,47 @@ Body
 
 .square{
     background: #8E4433;
-    width: 456px;
-    height: 477px;
+    width: 100%; 
+    max-width: 456px; 
     border-radius: 0% 20% 0% 20%;
+    aspect-ratio: 456 / 477; 
+
 }
+
+/* .square {
+  background: #8E4433;
+  
+  max-width: 456px; 
+  border-radius: 0% 20% 0% 20%;
+}*/
 
 .förstaRubrik{
     color: #CBA84E;
-    font-size: 5em;
-    margin-left: 0.4em;
+    font-size: 5.3125em;
+    margin:0;
 }
 
 .andraRubrik{
     color: #8E4433;
-    font-size: 5em;
-    margin-top: -1em;
-    margin-left: 0.4em;
+    font-size: 5.3125em;
+    margin:0;
+    margin-top: -36px;
 }
 
 .texten{
-    font-size: 1.2em;
-    margin: 2em;
+  font-size: 1.875em;
+}
+
+.rubrik{
+  text-align: center;
+}
+
+#menu li a{
+  transition: all 0.3s ease 0s;
+}
+
+#menu li a:hover{
+  color: black;
 }
 
 /*********************************
@@ -186,20 +213,27 @@ Slideshow
     
    }
 
-   .vänsterSida {
+  .vänsterSida {
     grid-column: 1;
     grid-row: 1;
-   }
+    padding-left: 1.35em;
+ }
 
-   .högerSida{
+  .högerSida{
     grid-column: 2;
     grid-row: 1;
-   }
+    padding-right: 1.35em;
+ }
 
-   footer{
+  footer{
     position:absolute;
+ }
 
+ .square{
+  background: #8E4433;
+  width: 456px;
+  height: 477px;
+  border-radius: 0% 20% 0% 20%;
 }
 
-
-}
+    }
