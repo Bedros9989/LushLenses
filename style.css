@@ -83,6 +83,8 @@ li,a{
   .hamburger{
     display: block;
     order:1;
+    margin-left: 20px;
+    margin-right: -28px;
   }
 
   #menu{
