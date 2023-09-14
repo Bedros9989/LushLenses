@@ -26,3 +26,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+const hamburger = document.querySelector(".hamburger");
+const menu = document.querySelector("#menu");
+
+hamburger.addEventListener("click", ()=>{
+  hamburger.classList.toggle("active");
+  menu.classList.toggle("active");
+})

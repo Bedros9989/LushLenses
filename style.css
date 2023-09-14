@@ -109,6 +109,7 @@ Body
 
 .rubrik{
   text-align: center;
+  color: #CBA84E;
 }
 
 .square{
@@ -265,6 +266,15 @@ Små skärmar
         top: 70px;
         gap: 0;
         flex-direction: column;
+        background-color: #8E4433;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        margin: 16px 0;
+      }
+
+      #menu.active{
+        left: 0;
       }
     
       header{
