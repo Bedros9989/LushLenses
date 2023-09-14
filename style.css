@@ -51,6 +51,14 @@ li,a{
   padding-top: 0.5em;
 }
 
+#menu li a{
+  transition: all 0.3s ease 0s;
+}
+
+#menu li a:hover{
+  color: black;
+}
+
 /*********************************
 Body
 **********************************/
@@ -60,22 +68,6 @@ Body
     display: grid;
     margin: 1em 1em 1em 1em;
 }
-
-.square{
-    background: #8E4433;
-    width: 100%; 
-    max-width: 456px; 
-    border-radius: 0% 20% 0% 20%;
-    aspect-ratio: 456 / 477; 
-
-}
-
-/* .square {
-  background: #8E4433;
-  
-  max-width: 456px; 
-  border-radius: 0% 20% 0% 20%;
-}*/
 
 .förstaRubrik{
     color: #CBA84E;
@@ -98,39 +90,34 @@ Body
   text-align: center;
 }
 
-#menu li a{
-  transition: all 0.3s ease 0s;
-}
+.square{
+  background: #8E4433;
+  width: 100%; 
+  max-width: 456px; 
+  border-radius: 0% 20% 0% 20%;
+  aspect-ratio: 456 / 477; 
 
-#menu li a:hover{
-  color: black;
 }
 
 .glasÖgon {
   position: absolute;
-  top: 50%; /* Vertically center the image */
-  left: 50%; /* Horizontally center the image */
-  transform: translate(-50%, -50%); /* Center the image precisely */
-  max-width: 110%; /* Ensure the image does not exceed its container's width */
-  max-height: 110%; /* Ensure the image does not exceed its container's height */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); /* Centrera bilden */
+  max-width: 110%; 
+  max-height: 110%; 
 }
-
-
-
 
 /*********************************
 Footer
 **********************************/
 
-footer{
-    background-color: #8E4433;
-    position: relative;
-    left: 0;
-    right: 0;  
-    width: 100%;
-    margin: 0 -1em 0 0;
-    text-align: center;
-    color: white;
+footer {
+  background-color: #8E4433;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 0.25em 0; /* Add padding to top and bottom for spacing */
 }
 
 /*********************************
@@ -219,6 +206,10 @@ Slideshow
   }
 
 
+/*********************************
+Övrigt
+**********************************/
+
 @media only screen and (min-width: 1280px) {
     /* CSS for 1280px and more */
     
@@ -258,7 +249,6 @@ Slideshow
   max-width: 110%; /* Ensure the image does not exceed its container's width */
   max-height: 110%; /* Ensure the image does not exceed its container's height */
 }
-
 
     }
 
