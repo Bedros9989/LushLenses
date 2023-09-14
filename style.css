@@ -17,7 +17,7 @@ Header
 
 header{
 
-    background-color: #8E4433;
+    background-color: #252341;
     display: flex;
     justify-content: flex-end; 
     align-items: flex-start;
@@ -63,7 +63,7 @@ li,a{
 }
 
 #menu li a:hover{
-  color: black;
+  color: #CBA84E;
 }
 
 .hamburger{
@@ -97,7 +97,7 @@ Body
 }
 
 .andraRubrik{
-    color: #8E4433;
+    color: #252341;
     font-size: 5.3125em;
     margin:0;
     margin-top: -36px;
@@ -113,7 +113,7 @@ Body
 }
 
 .square{
-  background: #8E4433;
+  background: #252341;
   width: 100%; 
   max-width: 456px; 
   border-radius: 0% 20% 0% 20%;
@@ -135,7 +135,7 @@ Footer
 **********************************/
 
 footer {
-  background-color: #8E4433;
+  background-color: #252341;
   width: 100%;
   text-align: center;
   color: white;
@@ -231,7 +231,7 @@ Större skärmar
  }
 
  .square{
-  background: #8E4433;
+  background: #252341;
   width: 456px;
   height: 477px;
   border-radius: 0% 20% 0% 20%;
