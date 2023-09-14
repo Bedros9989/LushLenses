@@ -13,6 +13,8 @@ body {
 Header
 **********************************/
 
+
+
 header{
 
     background-color: #8E4433;
@@ -36,12 +38,21 @@ li,a{
     margin-inline: 0.3em;
     
 }
-
+/*
 .logo{
   width: 245px;
   height: 54px;
   margin-right: auto;
   padding-left: 3.5em;
+}
+*/
+.logo {
+  max-width: 100%; /* Ensure the logo doesn't exceed its container */
+  height: auto; /* Maintain the logo's aspect ratio */
+  margin-right: auto;
+  margin-left: auto; /* Center the logo horizontally */
+  padding: 0.5em 0; /* Add padding as needed for spacing */
+  max-height: 60px; /* Set a maximum height for the logo */
 }
 
 .cart {
@@ -57,6 +68,55 @@ li,a{
 
 #menu li a:hover{
   color: black;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+@media (max-width:768px) {
+  .hamburger{
+    display: block;
+    order:1;
+  }
+
+  #menu{
+    position: fixed;
+    left: 100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+  }
+
+  header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.cart{
+  order: 3;
+}
+
+.logo{
+  order:2;
+}
+
+.hamburger{
+
+}
+
 }
 
 /*********************************
