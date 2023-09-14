@@ -243,11 +243,11 @@ Slideshow
 
 .glasÖgon {
   position: absolute;
-  top: 50%; /* Vertically center the image */
-  left: 46%; /* Horizontally center the image */
-  transform: translate(-50%, -50%); /* Center the image precisely */
-  max-width: 110%; /* Ensure the image does not exceed its container's width */
-  max-height: 110%; /* Ensure the image does not exceed its container's height */
+  top: 50%; 
+  left: 46%; 
+  transform: translate(-50%, -50%); 
+  max-width: 110%; 
+  max-height: 110%; 
 }
 
     }
