@@ -79,55 +79,6 @@ li,a{
   background-color: white;
 }
 
-@media (max-width:768px) {
-  .hamburger{
-    display: block;
-    order:1;
-    margin-left: 20px;
-    margin-right: -28px;
-  }
-
-  #menu{
-    position: fixed;
-    left: 100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-  }
-
-  header{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-.cart{
-  order: 3;
-  max-width: 100%; /* Ensure the logo doesn't exceed its container */
-  height: auto; /* Maintain the logo's aspect ratio */
-  margin-right: 20px;
-  padding: 0.5em 0; /* Add padding as needed for spacing */
-  max-height: 46px; /* Set a maximum height for the logo */
-}
-
-.logo{
-  order:2;
-  max-width: 100%; /* Ensure the logo doesn't exceed its container */
-  height: auto; /* Maintain the logo's aspect ratio */
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0.5em 0; /* Add padding as needed for spacing */
-  padding-left: 40px;
-  max-height: 60px; /* Set a maximum height for the logo */
-}
-
-.hamburger{
-
-}
-
-}
 
 /*********************************
 Body
@@ -251,7 +202,7 @@ Slideshow
 
 
 /*********************************
-Övrigt
+Större skärmar
 **********************************/
 
 @media only screen and (min-width: 1280px) {
@@ -296,3 +247,66 @@ Slideshow
 
     }
 
+/*********************************
+Små skärmar
+**********************************/
+
+    @media (max-width:768px) {
+      .hamburger{
+        display: block;
+        order:1;
+        margin-left: 20px;
+        margin-right: -28px;
+      }
+    
+      #menu{
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+      }
+    
+      header{
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+    .cart{
+      order: 3;
+      max-width: 100%; /* Ensure the logo doesn't exceed its container */
+      height: auto; /* Maintain the logo's aspect ratio */
+      margin-right: 20px;
+      padding: 0.5em 0; /* Add padding as needed for spacing */
+      max-height: 46px; /* Set a maximum height for the logo */
+    }
+    
+    .logo{
+      order:2;
+      max-width: 100%; /* Ensure the logo doesn't exceed its container */
+      height: auto; /* Maintain the logo's aspect ratio */
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0.5em 0; /* Add padding as needed for spacing */
+      padding-left: 40px;
+      max-height: 60px; /* Set a maximum height for the logo */
+    }
+
+    .förstaRubrik{
+
+      font-size: 3.5em;
+
+    }
+    
+    .andraRubrik{
+      font-size: 3.5em;
+
+    }
+
+    .texten{
+      font-size: 1.5em;
+    }
+    }
