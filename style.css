@@ -43,6 +43,10 @@ textarea {
   align-items: center;
 }
 
+#emailError {
+  color: red;
+}
+
 /*********************************
 Header
 **********************************/
