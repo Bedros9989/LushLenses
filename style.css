@@ -62,7 +62,7 @@ Header
 
 
 
-header{
+header{ /*Headern, innehåller en toppmeny*/
 
     background-color: #252341;
     display: flex;
@@ -72,13 +72,13 @@ header{
     padding: 1.25em ;
 }
 
-#menu{
+#menu{ /*Menyn till headern*/
     list-style: none; /* Tar bort punkter */
     padding-right: 30px;
 
 }
 
-li,a{
+li,a{ /*Texten i menyn*/
     text-decoration: none; /* Tar bort understräck */
     color: white;
     font-size: 1.1em;
@@ -86,7 +86,7 @@ li,a{
 }
 
 
-.logo {
+.logo { /*LushLenses logo*/
   max-width: 100%; /* Ensure the logo doesn't exceed its container */
   height: auto; /* Maintain the logo's aspect ratio */
   margin-right: auto;
@@ -96,7 +96,7 @@ li,a{
   
 }
 
-.cart {
+.cart { /*Shopping cart ikon*/
   max-width: 100%; /* Ensure the logo doesn't exceed its container */
   height: auto; /* Maintain the logo's aspect ratio */
   padding: 0.5em 0; /* Add padding as needed for spacing */
@@ -140,30 +140,31 @@ Body
     clear: both;
 }
 
-.förstaRubrik{
+.förstaRubrik{ /*Be Bold*/
     color: #CBA84E;
     font-size: 5.3125em;
     margin:0;
 }
 
-.andraRubrik{
+.andraRubrik{ /*Be Lush*/
     color: #252341;
     font-size: 5.3125em;
     margin:0;
-    margin-top: -36px;
+    margin-top: -70px;
 }
 
-.texten{
-  font-size: 1.875em;
+.texten{ /*Presentationstexten*/
+  font-size: 1.5em;
+  margin-right: 70px;
 }
 
-.rubrik{
+.rubrik{ /*Rubriken ovanför bildspelet*/
   text-align: center;
   color: #252341;
   font-size: 40px;
 }
 
-.square{
+.square{ /*Den stora blå rutan på startsidan*/
   background: #252341;
   width: 100%; 
   max-width: 456px; 
@@ -172,7 +173,7 @@ Body
 
 }
 
-.glasÖgon {
+.glasÖgon { /*Bilden på glasögonen på startsidan*/
   position: absolute;
   top: 50%; 
   left: 50%; 
@@ -381,16 +382,20 @@ Små skärmar
     
     .andraRubrik{
       font-size: 3.5em;
+      margin-top: -20px;
 
     }
 
     .texten{
-      font-size: 1.5em;
+      font-size: 1.3em;
+      margin-right: 0px;
     }
 
     }
 
-    /* About us sida */
+    /*******************
+    About us sidan 
+    ********************/
 
     .flexContainer {
       display: flex;
@@ -411,28 +416,28 @@ Små skärmar
         padding: 1em;
       }
 
-    .thumb {
+    .thumb { /*Våra portträttbilder på about us*/
       width: 100%;
   
     }
 
-    .namn {
+    .namn { /*Klass för våra namn på About us*/
       color: black;
       text-align: center;
       margin: 0;
     }
 
-    .position {
+    .position { /*Klass för arbetstitel på About us*/
       color: black;
       margin: 0;
     }
 
-    .more {
+    .more { /*Klass för more info på About us*/
       color: black;
       margin: 0;
     }
 
-    #team {
+    #team { /*Detta är id för rubriken på About us*/
       color: #252341;
       text-align: center;
       font-size: 45px;
