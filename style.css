@@ -380,3 +380,42 @@ Små skärmar
       font-size: 1.5em;
     }
     }
+
+    /* About us sida */
+
+    .flexContainer {
+      display: flex;
+      flex-direction: row; /*Lägg alltid innehåll på en rad */
+      flex-wrap: wrap; /*sköter radbrytning*/
+      gap: 2em;
+      margin: 30px;
+      justify-content: center;
+
+    }
+
+    .column {
+      width: 250px;
+        border: 3px groove #CBA84E;
+        padding: 1em;
+      }
+
+    .thumb {
+      width: 100%;
+  
+    }
+
+    .namn {
+      color: black;
+
+    }
+
+    .more {
+      color: black;
+    }
+
+    #team {
+      color: black;
+      text-align: center;
+      font-size: 45px;
+      text-shadow: #999999 1px 2px 5px;
+    }
