@@ -329,10 +329,6 @@ Små skärmar
         left: 0;
       }
 
-      /* #menu-toggle:checked ~ #menu { 
-        display: block;
-    } */
-
     
       header{
     
@@ -382,6 +378,7 @@ Små skärmar
     .texten{
       font-size: 1.5em;
     }
+
     }
 
     /* About us sida */
@@ -393,7 +390,10 @@ Små skärmar
       gap: 2em;
       margin: 30px;
       justify-content: center;
+    }
 
+    .flexItem {
+      align-items: stretch;
     }
 
     .column {
@@ -409,11 +409,18 @@ Små skärmar
 
     .namn {
       color: black;
+      text-align: center;
+      margin: 0;
+    }
 
+    .position {
+      color: black;
+      margin: 0;
     }
 
     .more {
       color: black;
+      margin: 0;
     }
 
     #team {
