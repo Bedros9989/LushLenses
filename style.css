@@ -14,12 +14,35 @@ body {
 Kontakt.html
 **********************************/
 
-textarea {
-  width:150px; 
-  height:150px;
+h3 {
+  display: flex;
+  justify-content: center;
+  color:#252341;
 }
 
+textarea {
+  width:160px; 
+  height:160px;
+  display: block;
+}
 
+#myForm {
+  border: 3px groove #CBA84E;
+  padding: 4em;
+}
+
+#myForm input{
+  display: block;
+  width: 100%;
+
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
 
 /*********************************
 Header
