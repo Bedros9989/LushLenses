@@ -4,6 +4,7 @@
       "image": "img/yellow6.png",
       "price": 150.00
     },
+
     {
       "name": "Mens Shoes DN 23YY",
       "image": "img/black1.png",
@@ -12,7 +13,25 @@
 
     {
         "name": "Nya glasögon 2023",
-        "image": "img/orangeblue4.png",
+        "image": "img/pink5.png",
         "price": 2000.00
+    },
+
+    {
+      "name": "Nya glasögon 2023",
+      "image": "img/green3.png",
+      "price": 2000.00
+    },
+
+    {
+      "name": "Nya glasögon 2023",
+      "image": "img/black2.png",
+      "price": 2000.00
+    },
+
+    {
+      "name": "Nya glasögon 2023",
+      "image": "img/orangeblue4.png",
+      "price": 2000.00
     }
   ]
