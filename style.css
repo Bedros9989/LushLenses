@@ -669,19 +669,19 @@ section {
 }
 
 section:nth-child(even) {
-  background-color:#252341;
+  background-color:#CBA84E;
 }
 
 section:nth-child(odd) {
-  background-color:#CBA84E;
+  background-color:#252341;
 }
 
 .popup {
   width: 80%;
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(80px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1s all ease;
 }
 
 .active {
