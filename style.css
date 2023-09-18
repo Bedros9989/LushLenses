@@ -644,11 +644,11 @@ section {
 }
 
 section:nth-child(even) {
-  background-color:#252341;
+  background-color:#CBA84E;
 }
 
 section:nth-child(odd) {
-  background-color:#CBA84E;
+  background-color:#252341;
 }
 
 .popup {
