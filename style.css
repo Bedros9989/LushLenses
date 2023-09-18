@@ -7,7 +7,13 @@
 
 
 body {
+  animation: fade 0.3s;
   margin: 0 auto;
+}
+
+@keyframes fade {
+  0% { transform: scale(5.2s); }
+100% { transform: scale(5s); }
 }
 
 /*********************************
@@ -170,16 +176,21 @@ Body
   max-width: 456px; 
   border-radius: 0% 20% 0% 20%;
   aspect-ratio: 456 / 477; 
-
 }
 
 .glasÖgon { /*Bilden på glasögonen på startsidan*/
+  animation: fade 5s;
   position: absolute;
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%); /* Centrera bilden */
   max-width: 110%; 
   max-height: 110%; 
+}
+
+@keyframes fade {
+    0% { transform: scale(5.2s); }
+  100% { transform: scale(5s); }
 }
 
 /*********************************
