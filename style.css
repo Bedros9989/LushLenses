@@ -22,6 +22,7 @@ Kontakt.html
 
 h3 {
   display: flex;
+  font-size: 17px;
   justify-content: center;
   color:#252341;
 }
@@ -543,7 +544,7 @@ Små skärmar
 
 .skillsprojekt-titel { /*Rubriken som säger "Skills" och "Projects"*/
 text-align: center;
-font-size: 25px;
+font-size: 30px;
 color: #252341;
 }
 
@@ -641,22 +642,53 @@ border-style: none;
 }
 
 .rubrik-personlig { /*Rubrik på projekt*/
-  color: white;
   text-align: center;
   margin: 20px;
 }
 
 .underrubrik-personlig { /*Underrubrik på projekt*/
-  color: white;
   margin: 20px;
 }
 
 .projekttext { /*Beskrivning av projektet*/
-  color: white;
   margin: 20px;
   padding-bottom: 30px;
 }
+ 
+/**********
+animation  
+*********/
 
+section {
+  margin: -1em;
+  min-height: 180vh;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(even) {
+  background-color:#252341;
+}
+
+section:nth-child(odd) {
+  background-color:#CBA84E;
+}
+
+.popup {
+  width: 80%;
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+  background-color:white;
+}
 
  /*****************
   Produkt sida
