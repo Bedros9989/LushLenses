@@ -1,37 +1,37 @@
 [
     {
-      "name": "Mens Shoes DN 23XX",
+      "name": "Yellow F2023",
       "image": "img/yellow6.png",
-      "price": 150.00
+      "price": 350.00
     },
 
     {
-      "name": "Mens Shoes DN 23YY",
+      "name": "Black and Gold F2023",
       "image": "img/black1.png",
-      "price": 133.00
+      "price": 350.00
     },
 
     {
-        "name": "Nya glasögon 2023",
+        "name": "Pink F2023",
         "image": "img/pink5.png",
-        "price": 2000.00
+        "price": 350.00
     },
 
     {
-      "name": "Nya glasögon 2023",
+      "name": "Green F2023",
       "image": "img/green3.png",
-      "price": 2000.00
+      "price": 350.00
     },
 
     {
-      "name": "Nya glasögon 2023",
+      "name": "Black F2023",
       "image": "img/black2.png",
-      "price": 2000.00
+      "price": 350.00
     },
 
     {
-      "name": "Nya glasögon 2023",
+      "name": "Orange and Blue F2023",
       "image": "img/orangeblue4.png",
-      "price": 2000.00
+      "price": 350.00
     }
   ]
