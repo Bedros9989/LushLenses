@@ -7,7 +7,7 @@
 
 
 body {
-  animation: fade 0.3s;
+  animation: fade 1s;
   margin: 0 auto;
 }
 
@@ -22,9 +22,10 @@ Kontakt.html
 
 h3 {
   display: flex;
-  font-size: 17px;
+  font-size: 20px;
   justify-content: center;
   color:#252341;
+  margin: 20px;
 }
 
 textarea {
@@ -34,8 +35,8 @@ textarea {
 }
 
 #myForm {
-  border: 3px groove #CBA84E;
-  padding: 4em;
+  margin-bottom: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 4em;
 }
 
 #myForm input{
@@ -450,8 +451,7 @@ Små skärmar
 
     .column {
       width: 275px;
-        border: 3px groove #CBA84E;
-        padding: 1em;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;        padding: 1em;
       }
 
     .thumb { /*Våra portträttbilder på about us*/
