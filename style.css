@@ -104,6 +104,7 @@ li,a{ /*Texten i menyn*/
 }
 
 .cart { /*Shopping cart ikon*/
+  
   max-width: 100%; /* Ensure the logo doesn't exceed its container */
   height: auto; /* Maintain the logo's aspect ratio */
   padding: 0.5em 0; /* Add padding as needed for spacing */
@@ -135,6 +136,20 @@ li,a{ /*Texten i menyn*/
   background-color: white;
 }
 
+#cart-count-info {
+  position: absolute; /* Position the counter absolutely within the cart container */
+  top: 26px; /* Adjust the top position as needed */
+  right: 103px; /* Adjust the right position as needed */
+  background: red; /* Customize the background color */
+  color: white; /* Customize the text color */
+  font-size: 14px; /* Customize the font size */
+  width: 24px; /* Customize the width */
+  height: 24px; /* Customize the height */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*********************************
 Body
@@ -317,6 +332,11 @@ Större skärmar
   margin-left: 30px;
 }
 
+#cart-count-info {
+  top: 26px;
+  right: 103px;
+}
+
     }
 
 /*********************************
@@ -402,6 +422,11 @@ Små skärmar
       font-size: 1.3em;
       margin-right: 0px;
     }
+
+    #cart-count-info {
+      top: 33px;
+      right: 28px;
+  }
 
     }
 
@@ -823,3 +848,8 @@ section:nth-child(odd) {
         height: 121.5vh;
     }
 }
+
+
+
+
+
