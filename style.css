@@ -690,8 +690,6 @@ section:nth-child(odd) {
     font-weight: 600;
     line-height: 1.5;
     opacity: 0.5;
-    margin: 0.4rem 0;
-    margin-bottom: 50px;
 }
 
 /* product section */
@@ -706,7 +704,7 @@ section:nth-child(odd) {
 }
 
 .product{
-    margin: 2rem;
+    /*margin: 2rem;*/
     position: relative;
 }
 
@@ -714,6 +712,7 @@ section:nth-child(odd) {
     background: #ededed;
     padding: 3rem 0.5rem 2rem 0.5rem;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .product-img{
