@@ -722,6 +722,7 @@ border-style: none;
 .product-info{
     background: white;
     padding: 2rem;
+    text-align: center;
 }
 
 
@@ -735,8 +736,6 @@ border-style: none;
     
 }
 .product-price{
-    padding-top: 0.6rem;
-    padding-right: 0.6rem;
     display: inline-block;
 }
 
