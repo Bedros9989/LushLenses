@@ -679,7 +679,7 @@ section:nth-child(odd) {
 .popup {
   width: 80%;
   position: relative;
-  transform: translateY(150px);
+  transform: translateY(80px);
   opacity: 0;
   transition: 2s all ease;
 }
