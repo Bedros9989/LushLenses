@@ -25,32 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /*********************************
-Produkter
-**********************************/
-
-// Initialize Vue instance
-const app = Vue.createApp({
-  data() {
-    return {
-      products: []
-    };
-  },
-  mounted() {
-    // Fetch product data from JSON file
-    fetch('products.json')
-      .then(response => response.json())
-      .then(data => {
-        this.products = data;
-      })
-      .catch(error => console.error('Error fetching products:', error));
-  }
-});
-
-// Mount the Vue instance on the app element
-app.mount('#app');
-
-
-/*********************************
 Slideshow
 **********************************/
 
@@ -82,5 +56,33 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 };
+
+
+/*********************************
+Produkter
+**********************************/
+
+// Initialize Vue instance
+const app = Vue.createApp({
+  data() {
+    return {
+      products: []
+    };
+  },
+  mounted() {
+    // Fetch product data from JSON file
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        this.products = data;
+      })
+      .catch(error => console.error('Error fetching products:', error));
+  }
+});
+
+// Mount the Vue instance on the app element
+app.mount('#app');
+
+
 
 
