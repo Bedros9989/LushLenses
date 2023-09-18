@@ -20,10 +20,6 @@ const app = Vue.createApp({
         .catch(error => console.error('Error fetching products:', error));
     },
   
-
-
-
-  
   
   // Mount the Vue instance on the app element
 }).mount('#app')
