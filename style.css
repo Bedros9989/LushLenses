@@ -765,14 +765,18 @@ section:nth-child(odd) {
     cursor: pointer;
     border: none;
     transition: all 0.6s ease;
+    
+
 }
 #btn-cart{
     background: #252341;
     color: white;
+    
 }
 
 #btn-cart:hover{
     background: #252341;
+    
 }
 
 .product-info{

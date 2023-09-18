@@ -1,6 +1,5 @@
-let cartCount = 0;
-
-
+const counter = document.getElementById('cart-count-info')
+let count = 0;
 
 const productListApp = Vue.createApp({
   data() {
@@ -8,6 +7,14 @@ const productListApp = Vue.createApp({
       products: [],
     };
   },
+
+  methods: {
+    addToTheCart() {
+      count++;
+      counter.textContent = count;
+    },
+  },
+
   mounted() {
     // Fetch product data from JSON file
     fetch('products.json')
@@ -17,24 +24,9 @@ const productListApp = Vue.createApp({
       })
       .catch(error => console.error('Error fetching products:', error));
   },
-  methods: {
-    addToCart() {
-      cartCount++; 
-      console.log('addToCart method called. New cart count:', cartCount);
 
-    },
-  },
 });
 
 
 productListApp.mount('#app'); // Mount the Vue instance on the app element
 
-const cartApp = Vue.createApp({
-  data() {
-    return {
-      cartCount: cartCount 
-    };
-  },
-});
-
-cartApp.mount('#cartApp'); // Mount the Vue instance on the app2 element
