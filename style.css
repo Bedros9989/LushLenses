@@ -285,6 +285,7 @@ Slideshow
   }
 
 
+
 /*********************************
 Större skärmar
 **********************************/
@@ -339,13 +340,15 @@ Större skärmar
   right: 103px;
 }
 
+
+
     }
 
 /*********************************
 Små skärmar
 **********************************/
 
-    @media (max-width:768px) {
+    @media only screen and (max-width:768px) {
       .hamburger {
         display: block;
         order:1;
@@ -430,8 +433,20 @@ Små skärmar
       right: 28px;
   }
 
-    }
+  .container-personligsida{ /*Container för bild, presentation och skills*/
+  flex-direction: column;
+  }
 
+  .image-container { /*Container för där ens bild visas*/
+    flex: 1;
+  }
+  
+  .presentation-container { /*Container med presentationstexten*/
+    flex: 1;
+  }
+
+    
+    }
     /*******************
     About us sidan 
     ********************/
@@ -810,10 +825,10 @@ section:nth-child(odd) {
 .product:hover .product-btns{
     opacity: 1;
 }
-
+    
 
 /* Media Queries */
-@media screen and (min-width: 992px){
+@media only screen and (min-width: 992px){
     .product-items{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -825,7 +840,7 @@ section:nth-child(odd) {
 }
 
 
-@media screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px){
     .product-items{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -838,7 +853,7 @@ section:nth-child(odd) {
     }
 }
 
-@media screen and (min-width: 1336px){
+@media only screen and (min-width: 1336px){
     .product-items{
         grid-template-columns: repeat(3, 1fr);
     }
