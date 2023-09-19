@@ -428,6 +428,10 @@ Små skärmar
       margin-right: 0px;
     }
 
+    .rubrik{ /*Rubriken ovanför bildspelet*/
+      font-size: 32px;
+    }
+
     #cart-count-info {
       top: 33px;
       right: 28px;
