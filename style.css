@@ -685,21 +685,13 @@ section {
   align-items: center;
 }
 
-.even-bg {
-  background-color: #CBA84E; /* Bakgrundsfärg för even-indexade sektioner */
-}
-
-.odd-bg {
-  background-color: #252341; /* Bakgrundsfärg för odd-indexade sektioner */
-}
-/* 
 section:nth-child(even) {
   background-color:#CBA84E;
 }
 
 section:nth-child(odd) {
   background-color:#252341;
-} */
+}
 
 .popup {
   position: relative;

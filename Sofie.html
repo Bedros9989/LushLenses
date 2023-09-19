@@ -8,11 +8,8 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="scriptpersonlig.js" defer></script>
     <script src="script.js" defer></script>
-<<<<<<< Updated upstream
     <script src="produkter.js" defer></script>
-=======
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
->>>>>>> Stashed changes
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -74,26 +71,23 @@
     <h2 class="skillsprojekt-titel">Projects</h2>
 
 
-
+<section>
         <div id="app">
             <main>
             <div class="popup">
-            <div v-for="project in projects" :key="project.id">
-                <section>
+            <div v-for="project in projects">               
                 <div class="project">
                     <img :src="project.image" alt = "En bild" class="personligthumb">
                     <h2 class ="rubrik-personlig" v-text="project.rubrik"></h2>
                     <h3 class ="underrubrik-personlig" v-text="project.underrubrik"></h3>
                     <p class ="projekttext" v-text="project.text"></p>
-                </div>
-                </section>
+                </div>   
             </div>
             </div>
 
     </main>
         </div>
-
-
+    </section>
 
                 <!-- <section>
                     <div class="popup">
