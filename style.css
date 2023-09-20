@@ -630,7 +630,7 @@ color: #252341;
 }
 
 
-#personligrubrik1{ /*Rubrik med din arbetstitel*/
+.personligrubrik1{ /*Rubrik med din arbetstitel*/
   text-align: center;
   font-size: 40px;
   margin: 0;
@@ -640,7 +640,7 @@ color: #252341;
   background-color: #dddddd;
 }
 
-#personligrubrik2{ /*Rubrik med ditt namn*/
+.personligrubrik2{ /*Rubrik med ditt namn*/
   text-align: center;
   font-size: 50px;
   padding: 0;
@@ -683,13 +683,23 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #dddddd;
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
   background-color:#CBA84E;
 }
 
 section:nth-child(odd) {
+  background-color:#252341;
+} */
+
+
+.popup:nth-child(even) {
+  background-color:#CBA84E;
+}
+
+.popup:nth-child(odd) {
   background-color:#252341;
 }
 

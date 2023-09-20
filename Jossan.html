@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LushLenses - Sofie</title>
     <link rel="stylesheet" href="style.css"/><!--lägger till stilmallen-->
-    <script src="scriptpersonlig.js" defer></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="personligJossan.js" defer></script>
     <script src="script.js" defer></script>
     <script src="produkter.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
@@ -32,8 +34,8 @@
 
      </header>
 
-     <h1 id="personligrubrik1">Product Manager</h1>
-     <h1 id="personligrubrik2">Jossan</h1>
+     <h1 class="personligrubrik1">Product Manager</h1>
+     <h1 class="personligrubrik2">Jossan</h1>
 
 
 
@@ -69,7 +71,19 @@
     <h2 class="skillsprojekt-titel">Projects</h2>
 
 
-                <section>
+    <section>
+    <div id="jossanApp">
+        <div v-for="project in projectsJossan" class="popup">
+            <div class="project">
+                    <img class="personligthumb" :src="project.image" alt ="">
+                    <h2 class="rubrik-personlig" v-text="project.rubrik"></h2>
+                    <h3 class="underrubrik-personlig" v-text="project.underrubrik"></h3>
+                    <p class="projekttext" v-text="project.text"></p>
+            </div>
+        </div>
+        </div>
+    </section>
+                <!-- <section>
                     <div class="popup">
                 <img src="img/shadewave.png" alt="ShadeWave" class="personligthumb">
                 <h2 class="rubrik-personlig">EcoShade</h2>
@@ -141,7 +155,7 @@
                         
                         The result? A 30% increase in sales and a 25% boost in online engagement. SunnyVibe 360 not only showcased our commitment to innovation but also solidified our position as a leader in the sunglasses industry.
                     </p>
-            </div></section>
+            </div></section> -->
               
                  <footer>
                     <p>© LushLenses 2023</p>
