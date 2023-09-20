@@ -42,3 +42,16 @@ const productListApp = Vue.createApp({
 
 productListApp.mount('#app'); // Mount the Vue instance on the app element
 
+
+/*
+<script>
+// Retrieve cart count from localStorage
+const cartCount = localStorage.getItem('count');
+
+// Update the cart count element
+const cartCountElement = document.getElementById('cart-count-info');
+if (cartCountElement) {
+  cartCountElement.textContent = cartCount || '0';
+}
+</script>
+*/

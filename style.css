@@ -10,7 +10,7 @@ body {
   animation: fade 1s;
   margin: 0 auto;
 }
-
+ 
 @keyframes fade {
   0% { transform: scale(5.2s); }
 100% { transform: scale(5s); }
