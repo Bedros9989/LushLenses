@@ -1,0 +1,617 @@
+*{
+      font-family: 'Poppins', sans-serif;
+      
+  }
+  
+  /*********************************
+Body
+**********************************/
+
+body {
+    animation: fade 1s;
+    /* margin: 0 auto; kolla upp den */
+  }
+
+  /* @keyframes fade {
+    0% { transform: scale(5.2s); }
+  100% { transform: scale(5s); }
+  } */
+
+.container {
+      position: relative;
+      display: grid;
+      margin: 1em 1em 1em 1em;
+      clear: both;
+  }
+  
+  .förstaRubrik{ /*Be Bold*/
+      color: #CBA84E;
+      font-size: 5.3125em;
+      margin:0;
+  }
+  
+  .andraRubrik{ /*Be Lush*/
+      color: #252341;
+      font-size: 5.3125em;
+      margin:0;
+      margin-top: -70px;
+  }
+  
+  .texten{ /*Presentationstexten*/
+    font-size: 1.5em;
+    margin-right: 70px;
+  }
+  
+  .rubrik{ /*Rubriken ovanför bildspelet*/
+    text-align: center;
+    color: #252341;
+    font-size: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .square{ /*Den stora blå rutan på startsidan*/
+    background: #252341;
+    width: 100%; 
+    max-width: 456px; 
+    border-radius: 0% 20% 0% 20%;
+    /* aspect-ratio: 456 / 477;  */
+  }
+  
+  .glasÖgon { /*Bilden på glasögonen på startsidan*/
+    animation: fade 5s;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Centrera bilden */
+    max-width: 110%; 
+    max-height: 110%; 
+  }
+  
+  /* @keyframes fade {
+      0% { transform: scale(5.2s); }
+    100% { transform: scale(5s); }
+  } */
+
+
+/*********************************
+Header
+**********************************/
+
+header{ /*Headern, innehåller en toppmeny*/
+
+    background-color: #252341;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    margin: 0;
+    padding: 1.25em ;
+}
+
+#menu{ /*Menyn till headern*/
+    list-style: none; /* Tar bort punkter */
+    padding-right: 30px;
+
+}
+
+li,a{ /*Texten i menyn*/
+    text-decoration: none; /* Tar bort understräck */
+    color: white;
+    font-size: 1.1em;
+    margin-inline: 0.4em;    
+}
+
+.logo { /*LushLenses logo*/
+  max-width: 100%; /* Ensure the logo doesn't exceed its container */
+  height: auto; /* Maintain the logo's aspect ratio */
+  margin-right: auto;
+  padding: 0.5em 0; /* Add padding as needed for spacing */
+  padding-left: 40px;
+  max-height: 60px; /* Set a maximum height for the logo */
+  
+}
+
+.cart { /*Shopping cart ikon*/
+  max-width: 100%; /* Ensure the logo doesn't exceed its container */
+  height: auto; /* Maintain the logo's aspect ratio */
+  padding: 0.5em 0; /* Add padding as needed for spacing */
+  padding-right: 60px;
+  max-height: 52px; /* Set a maximum height for the logo */
+  fill: white;
+  margin-right: 30px;
+}
+
+/* #menu li a{
+  transition: all 0.8s ease 0s;
+} */
+
+#menu li a:hover{
+  color: #CBA84E;
+  letter-spacing: 1px;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+#cart-count-info {
+  position: absolute; /* Position the counter absolutely within the cart container */
+  top: 26px; /* Adjust the top position as needed */
+  right: 103px; /* Adjust the right position as needed */
+  background: #CBA84E; /* Customize the background color */
+  color: white; /* Customize the text color */
+  font-size: 14px; /* Customize the font size */
+  width: 24px; /* Customize the width */
+  height: 24px; /* Customize the height */
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*********************************
+Slideshow
+**********************************/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 30px;
+  }
+
+  .mySlides {
+    display: none;
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: 100%;
+  }
+
+  /* .mySlides.fade1 {
+    display: block;
+  } */
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  } */
+  
+  .prev:hover, .next:hover {
+    background-color: transparent;
+    color: #CBA84E;
+;
+  }
+
+  /* .active, .dot:hover {
+    background-color: #717171;
+  } */
+  
+  /* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  } */
+
+
+/*********************************
+Footer
+**********************************/
+
+footer {
+  background-color: #252341;
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 0.25em 0; /* Add padding to top and bottom for spacing */
+}
+
+/*********************************
+Kontakt.html
+**********************************/
+
+h3 {
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    color:#252341;
+    margin: 10px;
+  }
+  
+  textarea {
+    width:160px; 
+    height:160px;
+    display: block;
+  }
+  
+  #myForm {
+    margin-bottom: 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 4em;
+  }
+  
+  #myForm input{
+    display: block;
+    width: 100%;
+  }
+  
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #emailError {
+    color: red;
+  }
+  
+  label[for="firstName"]::after,
+  label[for="lastName"]::after,
+  label[for="phoneNumber"]::after,
+  label[for="email"]::after {
+    content: " *"; 
+    color: red; 
+  }
+  
+/*******************
+ About us sidan 
+ ********************/
+
+    .flexContainer {
+        display: flex;
+        flex-direction: row; /*Lägg alltid innehåll på en rad */
+        flex-wrap: wrap; /*sköter radbrytning*/
+        gap: 2em;
+        margin: 30px;
+        justify-content: center;
+      }
+  
+      /* .flexItem {
+        align-items: stretch;
+      } */
+  
+      .column {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;        padding: 1em;
+        }
+  
+      .thumb { /*Våra portträttbilder på about us*/
+        width: 100%;
+      }
+  
+      .namn { /*Klass för våra namn på About us. Detta är en H2.*/
+        color: black;
+        text-align: center;
+        margin: 0;
+      }
+  
+      .position { /*Klass för arbetstitel på About us. Detta är en H3.*/
+        color: black;
+        margin: 0;
+      }
+  
+      .more { /*Klass för more info på About us. Detta är en A-länk.*/
+        color: black;
+        margin: 0;
+      }
+  
+      #team { /*Detta är id för rubriken på About us*/
+        color: #252341;
+        text-align: center;
+        font-size: 45px;
+        background-color: #dddddd;
+        border-bottom-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+        margin-top: 0;
+        padding: 10px;
+      }
+  
+      /* .grid-container {
+        display: grid;
+        width: auto;
+        background-color: #252341;
+        margin: 50px;
+        margin-left: 90px;
+        margin-right: 90px;
+        padding: 20px;
+    } */
+
+     
+  /*****************
+  Personlig sida
+  ******************/
+
+
+.container-personligsida{ /*Container för bild, presentation och skills*/
+    display: flex;
+  }
+  
+  .skills-container { /*Container för hela skillsdelen*/
+    flex: 1;
+    margin-right: 30px;
+    margin-left: 10px;
+  }
+  
+  .skillruta-container { /*Container för varje enskild skillbar-ruta*/
+    width: 100%;
+    display: block;  
+    background-color: #CBA84E;
+  }
+  
+  .skills { /*Texten som visar själva procenten i skillbar*/
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    padding-right: 5px;
+    color: white; 
+    animation: progress 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .skillsprojekt-titel { /*Rubriken som säger "Skills" och "Projects"*/
+  text-align: center;
+  font-size: 30px;
+  color: #252341;
+  }
+  
+  .sofie1 { /*Skill 1 för Sofie*/
+    width: 90%; 
+    background-color: #252341;
+    animation-delay: 0.3s;
+  } 
+  
+  .sofie2 { /*Skill 2 för Sofie*/
+    width: 80%; 
+    background-color: #252341;
+    animation-delay: 0.6s;
+  }
+  
+  .sofie3 { /*Skill 3 för Sofie*/
+    width: 65%; 
+    background-color: #252341;
+    animation-delay: 0.9s;
+  }
+  
+  @keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+  }
+  
+  .image-container { /*Container för där ens bild visas*/
+    flex: 1;
+    padding: 10px;
+    margin: 30px;
+  }
+  
+  .image-personlig { /*Bilden på sig själv*/
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 0% 20% 0% 20%;
+  }
+  
+  .presentation-container { /*Container med presentationstexten*/
+    flex: 2;
+    font-size: 17px;
+    margin: 20px;
+  }
+  
+  
+  .personligrubrik1{ /*Rubrik med din arbetstitel*/
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    margin-top: 0px;
+    padding-top: 15px;
+    color: #252341;
+    background-color: #dddddd;
+  }
+  
+  .personligrubrik2{ /*Rubrik med ditt namn*/
+    text-align: center;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    color: #252341;
+    background-color: #dddddd;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 80%;
+  }
+  
+  .personligthumb { /*Bild till projekten*/
+  width: 100%;
+  /* border-radius: 0%;
+  border-width: 0%;
+  border-style: none; */
+  }
+  
+  .rubrik-personlig { /*Rubrik på projekt*/
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .underrubrik-personlig { /*Underrubrik på projekt*/
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .projekttext { /*Beskrivning av projektet*/
+    margin: 20px;
+    padding-bottom: 10px;
+  }
+   
+  /***********************
+  Animation personlig sida
+  ************************/
+  
+  section {
+    min-height: 1000px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  section:nth-child(even) {
+    background-color:#CBA84E;
+  }
+  
+  section:nth-child(odd) {
+    background-color:#252341;
+  }
+  
+  .popup {
+    position: relative;
+    transform: translateY(80px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .active {
+    transform: translateY(0);
+    opacity: 1;
+    background-color:white;
+  }
+  
+/*****************
+  Produktsida
+******************/
+
+.products{
+    width: 100%;
+    display: block;
+    padding: 1em 0;
+  }
+  
+  .lg-title{
+      font-size: 45px;
+      font-weight: 500;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-transform: capitalize;
+      color: #252341;
+  }
+  
+  .text-light{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+      color: black;
+      text-align: center;
+      width: 70%;
+      margin: 0.9rem auto;
+  }
+  
+  /* product section */
+  
+  
+   .product{
+      /*margin: 2rem;*/
+      position: relative;
+  }
+  
+  .product-content{
+      background: white;
+      padding: 3rem 0.5rem 2rem 0.5rem;
+      cursor: pointer;
+      margin-top: 50px;
+      margin-bottom: 10px;
+      border-radius: 0% 20% 0% 20%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  }
+  
+  .product-img{
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+  }
+  
+  .product-btns{
+      display: flex;
+      justify-content: center;
+      margin-top: 1.4rem;
+      opacity: 0;
+      transition: opacity 0.6s ease;
+  }
+  
+  #btn-cart {
+      /* background: transparent; */
+      border: 1px solid #252341;
+      padding: 0.8rem 0;
+      width: 150px;
+      font-family: inherit;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      transition: all 0.6s ease;
+      background: #252341;
+      color: white;   
+  }
+
+  .product-info{
+      padding: 2rem;
+      text-align: center;
+  }
+  
+  .product-name{
+      color: black;
+      display: block;
+      text-decoration: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      
+  }
+  .product-price{
+      display: inline-block;
+  }
+  
+  .product-img img{
+      transition: transform 0.6s ease;
+  }
+  .product:hover .product-img img{
+      transform: scale(1.1);
+  }
+  
+  
+
+/*************************
+Nu börjar desktopversionen 
+*************************/
+@media only screen and (min-width: 768px) {
+
+  
+
+
+
+
+
+}
