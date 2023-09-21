@@ -209,13 +209,13 @@ Slideshow
   max-width: 1000px;
   position: relative;
   margin: auto;
-  padding-bottom: 30px;
 }
 
 .mySlides {
   display: none;
   max-width: 100%; /* Ensure the image fits within the container */
   height: 100%;
+  margin-bottom: 30px;
 }
 
 .mySlides.fade1 {
@@ -227,8 +227,6 @@ Slideshow
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
-  padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 32px;
