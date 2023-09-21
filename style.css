@@ -298,7 +298,8 @@ textarea {
 label[for="firstName"]::after,
 label[for="lastName"]::after,
 label[for="phoneNumber"]::after,
-label[for="email"]::after {
+label[for="email"]::after,
+label[for="message"]::after {
   content: " *"; 
   color: red; 
 }
