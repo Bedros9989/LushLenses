@@ -293,8 +293,6 @@ textarea {
   color: red;
 }
 
-
-
 label[for="firstName"]::after,
 label[for="lastName"]::after,
 label[for="phoneNumber"]::after,

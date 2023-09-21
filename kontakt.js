@@ -53,6 +53,8 @@
 
         if (firstNameInput.value.trim() === "") {
             displayError("firstNameError", "First name is required");
+        } else if (!/^[A-Za-z]+$/.test(firstNameInput.value.trim())) {
+            displayError("firstNameError", "First name can only contain letters");
         } else {
             clearError("firstNameError");
         }
@@ -64,28 +66,31 @@
 
         if (lastNameInput.value.trim() === "") {
             displayError("lastNameError", "Last name is required");
+          } else if (!/^[A-Za-z]+$/.test(lastNameInput.value.trim())) {
+            displayError("lastNameError", "Last name can only contain letters");
         } else {
             clearError("lastNameError");
         }
     }
 
     function validatePhoneNumber() {
-      const phoneNumberInput = document.getElementById("phoneNumber");
+      const phoneNumber = document.getElementById("phoneNumber").value.trim();
     
-
-      if (phoneNumberInput.value.trim() === "") {
-          displayError("phoneNumberError", "Last name is required");
+      if (phoneNumber === "") {
+          displayError("phoneNumberError", "Phonenumber is required");
+        } else if (!/^\d{1,10}$/.test(phoneNumber)) {
+          displayError("phoneNumberError", "Phonenumber must be max 10 digits");
       } else {
           clearError("phoneNumberError");
       }
   }
-  
+
   function validateEmail() {
     const emailInput = document.getElementById("email");
   
 
     if (emailInput.value.trim() === "") {
-        displayError("emailError", "Last name is required");
+        displayError("emailError", "Email is required");
     } else {
         clearError("emailError");
     }
@@ -96,7 +101,7 @@ function validateMessage() {
 
 
   if (messageInput.value.trim() === "") {
-      displayError("messageError", "Last name is required");
+      displayError("messageError", "Message is required");
   } else {
       clearError("messageError");
   }
