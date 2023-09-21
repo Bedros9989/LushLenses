@@ -1,10 +1,8 @@
 
 *{
-  box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
+  box-sizing: border-box; /*Sätt box-sizing till border-box, vilket inkluderar padding och ramar i elementets totala bredd och höjdberäkning.*/
+  font-family: 'Poppins', sans-serif;  
 }
-
 
 body {
   animation: fade 1s;
@@ -15,6 +13,222 @@ body {
   0% { transform: scale(5.2s); }
 100% { transform: scale(5s); }
 }
+
+
+/*********************************
+Header
+**********************************/
+
+header{ /*Headern, innehåller en toppmeny*/
+
+  background-color: #252341;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: flex-start;
+  margin: 0;
+  padding: 1.25em ;
+}
+
+#menu{ /*Menyn till headern*/
+  list-style: none; /* Tar bort punkter */
+  padding-right: 30px;
+
+}
+
+li,a{ /*Texten i menyn*/
+  text-decoration: none; /* Tar bort understräck */
+  color: white;
+  font-size: 1.1em;
+  margin-inline: 0.4em;    
+}
+
+.logo-container {
+  display: flex;
+  order: 2;
+}
+
+.logo { /*LushLenses logo*/
+order: 2;
+max-width: 100%; /* Ensure the logo doesn't exceed its container */
+height: auto; /* Maintain the logo's aspect ratio */
+margin-right: auto;
+margin-left: auto;
+padding: 0.5em 0; /* Add padding as needed for spacing */
+padding-left: 40px;
+max-height: 60px; /* Set a maximum height for the logo */
+}
+
+.cart { /*Shopping cart ikon*/
+max-width: 100%; /* Ensure the logo doesn't exceed its container */
+height: auto; /* Maintain the logo's aspect ratio */
+padding: 0.5em 0; /* Add padding as needed for spacing */
+padding-right: 60px;
+max-height: 52px; /* Set a maximum height for the logo */
+fill: white;
+margin-right: 30px;
+}
+
+#menu li a{
+transition: all 0.8s ease 0s;
+}
+
+#menu li a:hover{
+color: #CBA84E;
+letter-spacing: 1px;
+}
+
+.hamburger{
+display: none;
+cursor: pointer;
+}
+
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+background-color: white;
+}
+
+#cart-count-info {
+position: absolute; /* Position the counter absolutely within the cart container */
+top: 26px; /* Adjust the top position as needed */
+right: 103px; /* Adjust the right position as needed */
+background: #CBA84E; /* Customize the background color */
+color: white; /* Customize the text color */
+font-size: 14px; /* Customize the font size */
+width: 24px; /* Customize the width */
+height: 24px; /* Customize the height */
+border-radius: 50%; /* Make it circular */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/*********************************
+Body
+**********************************/
+
+.container {
+position: relative;
+  display: grid;
+  margin: 1em 1em 1em 1em;
+  clear: both;
+}
+
+.förstaRubrik{ /*Be Bold*/
+  color: #CBA84E;
+  font-size: 5.3125em;
+  margin:0;
+}
+
+.andraRubrik{ /*Be Lush*/
+  color: #252341;
+  font-size: 5.3125em;
+  margin:0;
+  margin-top: -70px;
+}
+
+.texten{ /*Presentationstexten*/
+font-size: 1.5em;
+margin-right: 70px;
+}
+
+.rubrik{ /*Rubriken ovanför bildspelet*/
+text-align: center;
+color: #252341;
+font-size: 40px;
+margin-bottom: 0px;
+}
+
+.square{ /*Den stora blå rutan på startsidan*/
+background: #252341;
+width: 100%; 
+max-width: 456px; 
+border-radius: 0% 20% 0% 20%;
+aspect-ratio: 456 / 477; /*Utan denna rad hade det inte synts på mobilen*/
+}
+
+.glasÖgon { /*Bilden på glasögonen på startsidan*/
+animation: fade 5s;
+position: absolute;
+top: 50%; 
+left: 50%; 
+transform: translate(-50%, -50%); /* Centrera bilden */
+max-width: 110%; 
+max-height: 110%; 
+}
+
+@keyframes fade {
+  0% { transform: scale(5.2s); }
+100% { transform: scale(5s); }
+}
+
+/*********************************
+Footer
+**********************************/
+
+footer {
+background-color: #252341;
+width: 100%;
+text-align: center;
+color: white;
+padding: 0.25em 0; /* Add padding to top and bottom for spacing */
+}
+
+/*********************************
+Slideshow
+**********************************/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.mySlides {
+  display: none;
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: 100%;
+}
+
+.mySlides.fade1 {
+  display: block;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 32px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0; /*Gör så att pilarna inte ligger på varandra utan på varsin*/
+}
+
+.prev:hover, .next:hover {
+  color: #CBA84E;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 
 /*********************************
 Kontakt.html
@@ -36,7 +250,8 @@ textarea {
 
 #myForm {
   margin-bottom: 30px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  padding: 4em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
+  padding: 4em;
 }
 
 #myForm input{
@@ -65,228 +280,6 @@ label[for="email"]::after {
 
 
 /*********************************
-Header
-**********************************/
-
-
-
-header{ /*Headern, innehåller en toppmeny*/
-
-    background-color: #252341;
-    display: flex;
-    justify-content: flex-end; 
-    align-items: flex-start;
-    margin: 0;
-    padding: 1.25em ;
-}
-
-#menu{ /*Menyn till headern*/
-    list-style: none; /* Tar bort punkter */
-    padding-right: 30px;
-
-}
-
-li,a{ /*Texten i menyn*/
-    text-decoration: none; /* Tar bort understräck */
-    color: white;
-    font-size: 1.1em;
-    margin-inline: 0.4em;    
-}
-
-
-.logo { /*LushLenses logo*/
-  max-width: 100%; /* Ensure the logo doesn't exceed its container */
-  height: auto; /* Maintain the logo's aspect ratio */
-  margin-right: auto;
-  padding: 0.5em 0; /* Add padding as needed for spacing */
-  padding-left: 40px;
-  max-height: 60px; /* Set a maximum height for the logo */
-  
-}
-
-.cart { /*Shopping cart ikon*/
-  
-  max-width: 100%; /* Ensure the logo doesn't exceed its container */
-  height: auto; /* Maintain the logo's aspect ratio */
-  padding: 0.5em 0; /* Add padding as needed for spacing */
-  padding-right: 60px;
-  max-height: 52px; /* Set a maximum height for the logo */
-  fill: white;
-  margin-right: 30px;
-}
-
-#menu li a{
-  transition: all 0.8s ease 0s;
-}
-
-#menu li a:hover{
-  color: #CBA84E;
-  letter-spacing: 1px;
-}
-
-.hamburger{
-  display: none;
-  cursor: pointer;
-}
-
-.bar{
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background-color: white;
-}
-
-#cart-count-info {
-  position: absolute; /* Position the counter absolutely within the cart container */
-  top: 26px; /* Adjust the top position as needed */
-  right: 103px; /* Adjust the right position as needed */
-  background: #CBA84E; /* Customize the background color */
-  color: white; /* Customize the text color */
-  font-size: 14px; /* Customize the font size */
-  width: 24px; /* Customize the width */
-  height: 24px; /* Customize the height */
-  border-radius: 50%; /* Make it circular */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*********************************
-Body
-**********************************/
-
-.container {
-  position: relative;
-    display: grid;
-    margin: 1em 1em 1em 1em;
-    clear: both;
-}
-
-.förstaRubrik{ /*Be Bold*/
-    color: #CBA84E;
-    font-size: 5.3125em;
-    margin:0;
-}
-
-.andraRubrik{ /*Be Lush*/
-    color: #252341;
-    font-size: 5.3125em;
-    margin:0;
-    margin-top: -70px;
-}
-
-.texten{ /*Presentationstexten*/
-  font-size: 1.5em;
-  margin-right: 70px;
-}
-
-.rubrik{ /*Rubriken ovanför bildspelet*/
-  text-align: center;
-  color: #252341;
-  font-size: 40px;
-  margin-bottom: 0px;
-}
-
-.square{ /*Den stora blå rutan på startsidan*/
-  background: #252341;
-  width: 100%; 
-  max-width: 456px; 
-  border-radius: 0% 20% 0% 20%;
-  aspect-ratio: 456 / 477; 
-}
-
-.glasÖgon { /*Bilden på glasögonen på startsidan*/
-  animation: fade 5s;
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); /* Centrera bilden */
-  max-width: 110%; 
-  max-height: 110%; 
-}
-
-@keyframes fade {
-    0% { transform: scale(5.2s); }
-  100% { transform: scale(5s); }
-}
-
-/*********************************
-Footer
-**********************************/
-
-footer {
-  background-color: #252341;
-  width: 100%;
-  text-align: center;
-  color: white;
-  padding: 0.25em 0; /* Add padding to top and bottom for spacing */
-}
-
-/*********************************
-Slideshow
-**********************************/
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    padding-bottom: 30px;
-  }
-
-  .mySlides {
-    display: none;
-    max-width: 100%; /* Ensure the image fits within the container */
-    height: 100%;
-  }
-
-  .mySlides.fade1 {
-    display: block;
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 32px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover, .next:hover {
-    background-color: transparent;
-    color: #CBA84E;
-;
-  }
-
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-
-
-
-/*********************************
 Större skärmar
 **********************************/
 
@@ -295,45 +288,47 @@ Större skärmar
     
    #menu li{
     display: inline;
-    
    }
 
-  .vänsterSida {
+  
+  .vänsterSida { /*Detta behövs på datorn*/
     grid-column: 1;
     grid-row: 1;
     padding-left: 3em;
  }
 
-  .högerSida{
+  .högerSida{ /*Detta behövs på datorn*/
     grid-column: 2;
     grid-row: 1;
     padding-right: 3em;
  }
 
-  footer{
-    position:absolute;
- }
-
  .square{
-  background: #252341;
   width: 456px;
   height: 477px;
-  border-radius: 0% 20% 0% 20%;
 }
 
 .glasÖgon {
-  position: absolute;
-  top: 50%; 
   left: 43%; 
-  transform: translate(-50%, -50%); 
-  max-width: 110%; 
-  max-height: 110%; 
 }
+
+/*
 
 .logo-container {
   margin-right: auto;
-  margin-left: 30px;
-}
+  margin-left: auto;
+}*/
+
+.logo { /*LushLenses logo*/
+  display: flex-start;
+  max-width: 100%;
+  height: auto; 
+  margin-right: auto;
+  margin-left: 600px;
+  padding: 0.5em 0; 
+  padding-left: 40px;
+  max-height: 60px; 
+  }
 
 #cart-count-info {
   top: 26px;
@@ -403,22 +398,18 @@ Små skärmar
       max-height: 46px; /* Set a maximum height for the logo */
     }
     
-    .logo-container {
-      display: flex;
-      order: 2;
-    }
-    
-    
+    /*
     .logo{
       order:2;
-      max-width: 100%; /* Ensure the logo doesn't exceed its container */
-      height: auto; /* Maintain the logo's aspect ratio */
+      max-width: 100%; 
+      height: auto;
       margin-right: auto;
       margin-left: auto;
-      padding: 0.5em 0; /* Add padding as needed for spacing */
+      padding: 0.5em 0; 
       padding-left: 40px;
-      max-height: 60px; /* Set a maximum height for the logo */
+      max-height: 60px; 
     }
+    */
 
     .förstaRubrik{
 
