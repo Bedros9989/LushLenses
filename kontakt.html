@@ -31,18 +31,22 @@
         </div>
     </header>
 
-    <h3>Do you want to get in touch with us? Fill out this form:</h3>
+    <h2 class="skillsprojekt-titel">Do you want to get in touch with us? <br>
+        Fill out this form:</h2>
     
     <div class="centered-container">
     <form id="myForm">
         <label for="firstName">First name:</label>
         <input type="text" id="firstName" name="firstName" required>
+        <span id="firstNameError"></span>
 
         <label for="lastName">Last name:</label>
         <input type="text" id="lastName" name="lastName" required>
+        <span id="lastNameError"></span>
 
         <label for="phoneNumber">Phonenumber:</label>
         <input type="number" id="phoneNumber" name="phoneNumber" onkeydown="return event.keyCode !== 69" required>
+        <span id="phoneNumberError"></span>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -50,6 +54,7 @@
 
         <label for="message">Message:</label>
         <textarea id="message "name="message" required></textarea>
+        <span id="messageError"></span>
     </form>
     </div>
     <footer>

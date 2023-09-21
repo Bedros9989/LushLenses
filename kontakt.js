@@ -1,8 +1,23 @@
-function validateEmail(email) {
-    const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    return emailRegex.test(email);
-  }
+// function validateEmail(email) {
+//     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+//     return emailRegex.test(email);
+//   }
   
+  
+//   // Add an event listener to the email input field for real-time validation
+//   const emailInput = document.getElementById('email');
+  
+//   emailInput.addEventListener('blur', function () {
+//     const email = emailInput.value;
+//     const isValid = validateEmail(email);
+  
+//     if (isValid) {
+//       clearError('emailError');
+//     } else {
+//       displayError('emailError', 'Please enter a valid email address.');
+//     }
+//   });
+
   // Function to display validation error messages
   function displayError(elementId, message) {
     const errorElement = document.getElementById(elementId);
@@ -14,30 +29,79 @@ function validateEmail(email) {
     const errorElement = document.getElementById(elementId);
     errorElement.textContent = '';
   }
+
+  // Lägg till eventlyssnare när sidan laddas
+  document.addEventListener("DOMContentLoaded", function () {
+      const firstNameInput = document.getElementById("firstName");
+      const lastNameInput = document.getElementById("lastName");
+      const phoneNumberInput = document.getElementById("phoneNumber");
+      const emailInput = document.getElementById("email");
+      const messageInput = document.getElementById("message");
   
-  // Add an event listener to the email input field for real-time validation
-  const emailInput = document.getElementById('email');
-  
-  emailInput.addEventListener('blur', function () {
-    const email = emailInput.value;
-    const isValid = validateEmail(email);
-  
-    if (isValid) {
-      clearError('emailError');
-    } else {
-      displayError('emailError', 'Please enter a valid email address.');
-    }
+      firstNameInput.addEventListener("blur", validateFirstName);
+      lastNameInput.addEventListener("blur", validateLastName);
+      phoneNumberInput.addEventListener("blur", validatePhoneNumber);
+      emailInput.addEventListener("blur", validateEmail);
+      messageInput.addEventListener("blur", validateMessage);
   });
+
+    // Valideringsfunktioner för varje fält
+    
+    function validateFirstName() {
+        const firstNameInput = document.getElementById("firstName");
+     
+
+        if (firstNameInput.value.trim() === "") {
+            displayError("firstNameError", "First name is required");
+        } else {
+            clearError("firstNameError");
+        }
+    }
+
+    function validateLastName() {
+        const lastNameInput = document.getElementById("lastName");
+       
+
+        if (lastNameInput.value.trim() === "") {
+            displayError("lastNameError", "Last name is required");
+        } else {
+            clearError("lastNameError");
+        }
+    }
+
+    function validatePhoneNumber() {
+      const phoneNumberInput = document.getElementById("phoneNumber");
+    
+
+      if (phoneNumberInput.value.trim() === "") {
+          displayError("phoneNumberError", "Last name is required");
+      } else {
+          clearError("phoneNumberError");
+      }
+  }
   
-  // Add an event listener to the form to prevent submission if the email is not valid
-//   const form = document.getElementById('myForm');
+  function validateEmail() {
+    const emailInput = document.getElementById("email");
   
-//   form.addEventListener('submit', function (event) {
-//     const email = emailInput.value;
-//     const isValid = validateEmail(email);
-  
-//     if (!isValid) {
-//       event.preventDefault(); // Prevent form submission
-//       displayError('emailError', 'Please enter a valid email address.');
-//     }
-//   });       
+
+    if (emailInput.value.trim() === "") {
+        displayError("emailError", "Last name is required");
+    } else {
+        clearError("emailError");
+    }
+}
+
+function validateMessage() {
+  const messageInput = document.getElementById("message");
+
+
+  if (messageInput.value.trim() === "") {
+      displayError("messageError", "Last name is required");
+  } else {
+      clearError("messageError");
+  }
+}
+
+
+
+

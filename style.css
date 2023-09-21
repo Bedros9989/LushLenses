@@ -289,9 +289,11 @@ textarea {
   align-items: center;
 }
 
-#emailError {
+#firstNameError, #lastNameError, #phoneNumberError, #emailError, #messageError {
   color: red;
 }
+
+
 
 label[for="firstName"]::after,
 label[for="lastName"]::after,
