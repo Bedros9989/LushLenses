@@ -14,6 +14,24 @@ body {
 100% { transform: scale(5s); }
 }
 
+h2 { /*Används till rubrik i contact och about us och personlig sida till rubrik på projekt och rubrikerna "Skills" och "Projects"*/
+  text-align: center;
+  font-size: 30px;
+  color: #252341;
+  }
+
+h3 { /*Används till rubrik till varje skillbar och underrubrik till rubrik på projekten (personlig sida)*/
+  display: flex;
+  font-size: 17px;
+  justify-content: center;
+  color: #252341;
+  margin: 10px;
+}
+
+p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
 /*********************************
 Header
@@ -48,8 +66,6 @@ header{ /*Headern, innehåller en toppmeny*/
     z-index: 1000;
     padding-top: 20px;
   }
-
-
 
 
 li,a{ /*Texten i menyn*/
@@ -131,7 +147,7 @@ justify-content: center;
 
 
 /*********************************
-Body
+Startsida
 **********************************/
 
 .container {
@@ -235,7 +251,7 @@ Slideshow
 }
 
 .next {
-  right: 0; /*Gör så att pilarna inte ligger på varandra utan på varsin*/
+  right: 0; /*Gör så att pilarna inte ligger på varandra utan på varsin sida*/
 }
 
 .prev:hover, .next:hover {
@@ -257,30 +273,30 @@ Slideshow
 Kontakt.html
 **********************************/
 
-h3 {
-  display: flex;
-  font-size: 17px;
-  justify-content: center;
-  color:#252341;
-  margin: 10px;
-}
-
 textarea {
-  width:160px; 
-  height:160px;
+  width: 100%;
+  height: 160px;
   display: block;
+  background-color: #dddddd;
+  border-style: groove;
+  border-color: #CBA84E;
+  border-width: 2px;
 }
 
 #myForm {
   margin-bottom: 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
-  padding: 4em;
+  padding: 70px;
+  padding-bottom: 10px;
 }
 
 #myForm input{
   display: block;
   width: 100%;
-
+  background-color: #dddddd;
+  border-style: groove;
+  border-color: #CBA84E;
+  border-width: 2px;
 }
 
 .centered-container {
@@ -291,6 +307,7 @@ textarea {
 
 #firstNameError, #lastNameError, #phoneNumberError, #emailError, #messageError {
   color: red;
+  font-size: smaller;
 }
 
 label[for="firstName"]::after,
@@ -298,13 +315,13 @@ label[for="lastName"]::after,
 label[for="phoneNumber"]::after,
 label[for="email"]::after,
 label[for="message"]::after {
-  content: " *"; 
+  content: "*"; 
   color: red; 
 }
 
 /*******************
-    About us sidan 
-    ********************/
+About us sidan 
+********************/
 
     .flexContainer {
       display: flex;
@@ -320,31 +337,26 @@ label[for="message"]::after {
     }
 
     .column {
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;        padding: 1em;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;        
+      padding: 1em;
       }
 
-    .thumb { /*Våra portträttbilder på about us*/
+    .thumb { /*Våra portträttbilder på About us*/
       width: 100%;
   
     }
 
-    .namn { /*Klass för våra namn på About us*/
-      color: black;
-      text-align: center;
+   .namn { /*Egen h2-klass pga annan margin*/
       margin: 0;
-    }
+    } 
 
-    .position { /*Klass för arbetstitel på About us*/
+    .more { /*Behövs egen a-klass för more info på About us*/
       color: black;
       margin: 0;
+      margin-left: 15px;
     }
 
-    .more { /*Klass för more info på About us*/
-      color: black;
-      margin: 0;
-    }
-
-    #team { /*Detta är id för rubriken på About us*/
+   #team { /*Rubrik på About us-sidan. Behövs egen h1 pga unikt utseende*/
       color: #252341;
       text-align: center;
       font-size: 45px;
@@ -404,11 +416,6 @@ label[for="message"]::after {
   opacity: 0;
 }
 
-.skillsprojekt-titel { /*Rubriken som säger "Skills" och "Projects"*/
-text-align: center;
-font-size: 30px;
-color: #252341;
-}
 
 .sofie1 { /*Skill 1 för Sofie*/
   width: 90%; 
@@ -456,7 +463,7 @@ color: #252341;
   margin: 20px;
 }
 
-.personligrubrik1{ /*Rubrik med din arbetstitel*/
+.personligrubrik1{ /*Rubrik med arbetstitel, behövs egen h1 pga speciellt utseende*/
   text-align: center;
   font-size: 40px;
   margin: 0;
@@ -464,9 +471,9 @@ color: #252341;
   padding-top: 15px;
   color: #252341;
   background-color: #dddddd;
-}
+} 
 
-.personligrubrik2{ /*Rubrik med ditt namn*/
+.personligrubrik2{ /*Rubrik med ditt namn, behövs egen h1 pga speciellt utseende*/
   text-align: center;
   font-size: 50px;
   padding: 0;
@@ -481,19 +488,8 @@ color: #252341;
 width: 100%;
 }
 
-.rubrik-personlig { /*Rubrik på projekt*/
-  text-align: center;
-  margin: 20px;
-}
-
-.underrubrik-personlig { /*Underrubrik på projekt*/
-  text-align: center;
-  margin: 20px;
-}
-
-.projekttext { /*Beskrivning av projektet*/
-  margin: 20px;
-  padding-bottom: 10px;
+.projekttext { /*p-klass för texten där man berättar om projektet. Egen klass pga egen padding*/
+  padding-bottom: 20px;
 }
 
 /**********
@@ -662,15 +658,15 @@ section {
 }
   
 
-/*********************************
-Större skärmar
-**********************************/
+/************************************************************************************************************************
+************************************************** STÖRRE SKÄRMAR *******************************************************
+************************************************************************************************************************/
 
 @media only screen and (min-width: 1280px) {
     /* CSS for 1280px and more */
     
 /*********************************
-Body
+Startsida
 *********************************/
 
     .förstaRubrik
@@ -753,7 +749,13 @@ Header
   padding-right: 60px; 
  }
 
+ /******************
+ Kontakt-sidan
+ ******************/
 
+ #myForm {
+  width: 400px;
+}
 
 /*********************************
 Personlig sida animation, stor skärm
@@ -777,10 +779,11 @@ Produktsida
 .product-items{
   grid-template-columns: repeat(3, 1fr);
 }
+
     }
 
 
-    
+   
 /*********************************
 Små skärmar
 **********************************
