@@ -31,9 +31,13 @@ const productListApp = Vue.createApp({
         this.products = data;
       })
       .catch(error => console.error('Error fetching products:', error));
-      const x = localStorage.getItem('count');
-      this.count = x;
-      counter.textContent = x;
+
+    let x = localStorage.getItem('count');
+    if (x === null) {
+      x = 0;
+    }
+    this.count = x;
+    counter.textContent = x;
   },
 
 });
