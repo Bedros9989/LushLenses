@@ -270,7 +270,6 @@ textarea {
   width: 100%;
   height: 160px;
   display: block;
-  background-color: #dddddd;
   border-style: groove;
   border-color: #CBA84E;
   border-width: 2px;
@@ -286,7 +285,6 @@ textarea {
 #myForm input{
   display: block;
   width: 100%;
-  background-color: #dddddd;
   border-style: groove;
   border-color: #CBA84E;
   border-width: 2px;
