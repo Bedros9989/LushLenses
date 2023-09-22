@@ -66,6 +66,7 @@
   }
 
   function validateEmail() {
+    debugger
     const emailInput= document.getElementById("email");
 
     if (emailInput.value === "") {
@@ -78,6 +79,7 @@
 }
 
 function validateMessage() {
+  debugger
   const messageTextarea = document.getElementById("message");
 
   if (messageTextarea.value === "") {
