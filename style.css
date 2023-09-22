@@ -519,22 +519,16 @@ section {
     display: block;
 }
 
-.text-light{
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: black;
-}
-
 /* product section */
 .products{
     padding: 1em 0;
 }
 
-.products .text-light{
-    text-align: center;
+.products .product-pres{
     width: 70%;
-    margin: 0.9rem auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .product{
