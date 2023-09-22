@@ -75,6 +75,45 @@
             "underrubrik" : "A commitment to the enviroment",
             "text" : "In my role as Marketing Director at our sunglasses company, I'm excited to share the success of our project, 'ShadeWave.' This venture was all about embracing artistic expression and individuality. 'ShadeWave' aimed to celebrate diversity by collaborating with emerging artists to create limited-edition sunglasses inspired by their unique perspectives. Each pair became a canvas for artistic expression, and we hosted gallery-style events to showcase the designs. To engage our audience, we launched the 'ShadeWave Art Challenge,' inviting customers to submit their own artwork inspired by the world of sunglasses. The winning designs were featured in our next collection. The project ignited creativity within our community and led to a 25% increase in sales. 'ShadeWave' not only demonstrated our commitment to supporting emerging artists but also encouraged our customers to see sunglasses as a form of self-expression and art"
         }
+    ],
+
+
+    "projectsMartin": [
+        {
+            "id" : 1,
+            "image" : "img/shadewave.png",
+            "rubrik" : "EcoShade",
+            "underrubrik" : "A commitment to the enviroment",
+            "text" : "In my role as Marketing Director at our sunglasses company, I'm excited to share the success of our project, 'ShadeWave.' This venture was all about embracing artistic expression and individuality. 'ShadeWave' aimed to celebrate diversity by collaborating with emerging artists to create limited-edition sunglasses inspired by their unique perspectives. Each pair became a canvas for artistic expression, and we hosted gallery-style events to showcase the designs. To engage our audience, we launched the 'ShadeWave Art Challenge,' inviting customers to submit their own artwork inspired by the world of sunglasses. The winning designs were featured in our next collection. The project ignited creativity within our community and led to a 25% increase in sales. 'ShadeWave' not only demonstrated our commitment to supporting emerging artists but also encouraged our customers to see sunglasses as a form of self-expression and art"
+        },
+        {
+            "id": 2,
+            "image" : "img/sunriseserenity.png",
+            "rubrik" : "Exempel",
+            "underrubrik" : "exempeltext",
+            "text" : "As the Marketing Director of our sunglasses company, I'm excited to highlight our project, 'Sunrise Serenity.' This campaign was all about promoting wellness and mindfulness through our eyewear. 'Sunrise Serenity' introduced a special collection of sunglasses designed to enhance relaxation and mindfulness. These sunglasses featured polarized lenses and soothing color schemes to create a calming visual experience. To engage our audience, we partnered with yoga and meditation influencers who showcased how our sunglasses complemented their mindfulness practices. We also organized 'Sunrise Meditation Sessions' in scenic locations, inviting customers to connect with nature while wearing our sunglasses. The project resonated with our target audience, resulting in a 35% increase in sales and positioning us as a brand that cares about holistic well-being. 'Sunrise Serenity' not only protected our customers' eyes but also helped them find inner peace and serenity."
+        },
+        {
+            "id" : 3,
+            "image" : "img/shadewave.png",
+            "rubrik" : "EcoShade",
+            "underrubrik" : "A commitment to the enviroment",
+            "text" : "In my role as Marketing Director at our sunglasses company, I'm excited to share the success of our project, 'ShadeWave.' This venture was all about embracing artistic expression and individuality. 'ShadeWave' aimed to celebrate diversity by collaborating with emerging artists to create limited-edition sunglasses inspired by their unique perspectives. Each pair became a canvas for artistic expression, and we hosted gallery-style events to showcase the designs. To engage our audience, we launched the 'ShadeWave Art Challenge,' inviting customers to submit their own artwork inspired by the world of sunglasses. The winning designs were featured in our next collection. The project ignited creativity within our community and led to a 25% increase in sales. 'ShadeWave' not only demonstrated our commitment to supporting emerging artists but also encouraged our customers to see sunglasses as a form of self-expression and art"
+        },
+        {
+            "id": 4,
+            "image" : "img/sunriseserenity.png",
+            "rubrik" : "Exempel",
+            "underrubrik" : "exempeltext",
+            "text" : "As the Marketing Director of our sunglasses company, I'm excited to highlight our project, 'Sunrise Serenity.' This campaign was all about promoting wellness and mindfulness through our eyewear. 'Sunrise Serenity' introduced a special collection of sunglasses designed to enhance relaxation and mindfulness. These sunglasses featured polarized lenses and soothing color schemes to create a calming visual experience. To engage our audience, we partnered with yoga and meditation influencers who showcased how our sunglasses complemented their mindfulness practices. We also organized 'Sunrise Meditation Sessions' in scenic locations, inviting customers to connect with nature while wearing our sunglasses. The project resonated with our target audience, resulting in a 35% increase in sales and positioning us as a brand that cares about holistic well-being. 'Sunrise Serenity' not only protected our customers' eyes but also helped them find inner peace and serenity."
+        },
+        {
+            "id" : 5,
+            "image" : "img/shadewave.png",
+            "rubrik" : "EcoShade",
+            "underrubrik" : "A commitment to the enviroment",
+            "text" : "In my role as Marketing Director at our sunglasses company, I'm excited to share the success of our project, 'ShadeWave.' This venture was all about embracing artistic expression and individuality. 'ShadeWave' aimed to celebrate diversity by collaborating with emerging artists to create limited-edition sunglasses inspired by their unique perspectives. Each pair became a canvas for artistic expression, and we hosted gallery-style events to showcase the designs. To engage our audience, we launched the 'ShadeWave Art Challenge,' inviting customers to submit their own artwork inspired by the world of sunglasses. The winning designs were featured in our next collection. The project ignited creativity within our community and led to a 25% increase in sales. 'ShadeWave' not only demonstrated our commitment to supporting emerging artists but also encouraged our customers to see sunglasses as a form of self-expression and art"
+        }
     ]
     
     }
