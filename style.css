@@ -10,8 +10,8 @@ body {
 }
  
 @keyframes fade {
-  0% { transform: scale(5.2s); }
-100% { transform: scale(5s); }
+  0% { transform: scale(5.2); }
+100% { transform: scale(5); }
 }
 
 h2 { /*Används till rubrik i contact och about us och personlig sida till rubrik på projekt och rubrikerna "Skills" och "Projects"*/
@@ -194,8 +194,8 @@ max-height: 110%;
 }
 
 @keyframes fade {
-  0% { transform: scale(5.2s); }
-100% { transform: scale(5s); }
+  0% { transform: scale(5.2); }
+100% { transform: scale(5); }
 }
 
 /*********************************
@@ -710,7 +710,7 @@ Header
     position: absolute;
     width: 25em;
     left: 0;
-    margin-left: 47em;
+    margin-left: 50em;
     top: 0;
     height: 80px;
     padding-right: 0;
