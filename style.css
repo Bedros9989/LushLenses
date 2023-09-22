@@ -710,11 +710,11 @@ Header
     position: absolute;
     width: 25em;
     left: 0;
-    margin-left: 49em;
+    margin-left: 47em;
     top: 0;
     height: 80px;
     padding-right: 0;
-
+    background-color: transparent;
   }
 
   #cart-count-info { /*Siffran som räknar upp */
@@ -782,24 +782,6 @@ Produktsida
 
     }
 
-
-   
-/*********************************
-Små skärmar
-**********************************
-    
-    /*
-    .logo{
-      order:2;
-      max-width: 100%; 
-      height: auto;
-      margin-right: auto;
-      margin-left: auto;
-      padding: 0.5em 0; 
-      padding-left: 40px;
-      max-height: 60px; 
-    }
-    */
  
 
 
