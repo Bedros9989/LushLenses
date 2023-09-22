@@ -1,5 +1,10 @@
 const counter = document.getElementById('cart-count-info')
+let x = localStorage.getItem('count');
+if (x === null) {
+  x = 0;
+}
 
+counter.textContent = x;
 
 const productListApp = Vue.createApp({
   data() {
