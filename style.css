@@ -762,6 +762,13 @@ Personlig sida animation, stor skärm
   flex-direction: row;
   }
 
+  /***************
+  About us-sidan
+  **************/
+  .column {
+    min-height: 780px;
+    }
+
 /**********************************
 Produktsida
 **********************************/
