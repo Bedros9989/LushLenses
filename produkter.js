@@ -25,7 +25,6 @@ const productListApp = Vue.createApp({
   },
 
   mounted() {
-    // Fetch product data from JSON file
     fetch('products.json')
       .then(response => response.json())
       .then(data => {
@@ -40,18 +39,6 @@ const productListApp = Vue.createApp({
 });
 
 
-productListApp.mount('#app'); // Mount the Vue instance on the app element
+productListApp.mount('#app'); 
 
 
-/*
-<script>
-// Retrieve cart count from localStorage
-const cartCount = localStorage.getItem('count');
-
-// Update the cart count element
-const cartCountElement = document.getElementById('cart-count-info');
-if (cartCountElement) {
-  cartCountElement.textContent = cartCount || '0';
-}
-</script>
-*/

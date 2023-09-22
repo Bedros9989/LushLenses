@@ -1,6 +1,23 @@
-// animation 
 const { createApp } = Vue
 
+createApp({
+    data() {
+        return {
+            projectsSofie: [] // En tom array som kommer att hålla projektdata
+        }
+    },
+    // Denna del av koden körs när komponenten skapas
+        created() {
+            // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'
+            axios.get('projects.json') 
+            .then((response) => {
+                // När svar mottages, uppdatera 'projects' datan med den hämtade projektlistan
+                this.projectsSofie = response.data.projectsSofie;
+            }) 
+      }
+  }).mount('#sofieApp')
+
+  
 createApp({
   data() {
       return {
@@ -18,6 +35,9 @@ createApp({
     }
 }).mount('#jossanApp')
 
+
+
+// Animation
 
 const popup = () => {
     const popups = document.querySelectorAll(".popup");
