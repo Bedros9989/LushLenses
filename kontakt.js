@@ -1,23 +1,3 @@
-// function validateEmail(email) {
-//     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-//     return emailRegex.test(email);
-//   }
-  
-  
-//   // Add an event listener to the email input field for real-time validation
-//   const emailInput = document.getElementById('email');
-  
-//   emailInput.addEventListener('blur', function () {
-//     const email = emailInput.value;
-//     const isValid = validateEmail(email);
-  
-//     if (isValid) {
-//       clearError('emailError');
-//     } else {
-//       displayError('emailError', 'Please enter a valid email address.');
-//     }
-//   });
-
   // Function to display validation error messages
   function displayError(elementId, message) {
     const errorElement = document.getElementById(elementId);
@@ -36,13 +16,13 @@
       const lastNameInput = document.getElementById("lastName");
       const phoneNumberInput = document.getElementById("phoneNumber");
       const emailInput = document.getElementById("email");
-      const messageInput = document.getElementById("message");
+      const messageTextarea = document.getElementById("message");
   
       firstNameInput.addEventListener("blur", validateFirstName);
       lastNameInput.addEventListener("blur", validateLastName);
       phoneNumberInput.addEventListener("blur", validatePhoneNumber);
       emailInput.addEventListener("blur", validateEmail);
-      messageInput.addEventListener("blur", validateMessage);
+      messageTextarea.addEventListener("blur", validateMessage);
   });
 
     // Valideringsfunktioner för varje fält
@@ -51,9 +31,9 @@
         const firstNameInput = document.getElementById("firstName");
      
 
-        if (firstNameInput.value.trim() === "") {
+        if (firstNameInput.value === "") {
             displayError("firstNameError", "First name is required");
-        } else if (!/^[A-Za-z]+$/.test(firstNameInput.value.trim())) {
+        } else if (!/^[A-Za-z]+$/.test(firstNameInput.value)) {
             displayError("firstNameError", "First name can only contain letters");
         } else {
             clearError("firstNameError");
@@ -64,9 +44,9 @@
         const lastNameInput = document.getElementById("lastName");
        
 
-        if (lastNameInput.value.trim() === "") {
+        if (lastNameInput.value === "") {
             displayError("lastNameError", "Last name is required");
-          } else if (!/^[A-Za-z]+$/.test(lastNameInput.value.trim())) {
+          } else if (!/^[A-Za-z]+$/.test(lastNameInput.value)) {
             displayError("lastNameError", "Last name can only contain letters");
         } else {
             clearError("lastNameError");
@@ -86,21 +66,21 @@
   }
 
   function validateEmail() {
-    const emailInput = document.getElementById("email");
-  
+    const emailInput= document.getElementById("email");
 
-    if (emailInput.value.trim() === "") {
+    if (emailInput.value === "") {
         displayError("emailError", "Email is required");
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value)) {
+        displayError("emailError", "Invalid email format");
     } else {
         clearError("emailError");
     }
 }
 
 function validateMessage() {
-  const messageInput = document.getElementById("message");
+  const messageTextarea = document.getElementById("message");
 
-
-  if (messageInput.value.trim() === "") {
+  if (messageTextarea.value === "") {
       displayError("messageError", "Message is required");
   } else {
       clearError("messageError");
