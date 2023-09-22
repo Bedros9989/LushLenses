@@ -54,7 +54,7 @@
     }
 
     function validatePhoneNumber() {
-      const phoneNumber = document.getElementById("phoneNumber").value.trim();
+      const phoneNumber = document.getElementById("phoneNumber").value;
     
       if (phoneNumber === "") {
           displayError("phoneNumberError", "Phonenumber is required");
@@ -66,7 +66,6 @@
   }
 
   function validateEmail() {
-    debugger
     const emailInput= document.getElementById("email");
 
     if (emailInput.value === "") {
@@ -79,7 +78,6 @@
 }
 
 function validateMessage() {
-  debugger
   const messageTextarea = document.getElementById("message");
 
   if (messageTextarea.value === "") {
