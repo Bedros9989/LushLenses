@@ -442,6 +442,21 @@ About us sidan
   animation-delay: 0.9s;
 }
 
+.martin1 {
+  width: 95%; background-color: #252341;
+  animation-delay: 0.3s;
+}
+
+.martin2 {
+  width: 70%; background-color: #252341;
+  animation-delay: 0.6s;
+}
+
+.martin3 {
+  width: 85%; background-color: #252341;
+  animation-delay: 0.9s;
+}
+
 @keyframes progress {
   0%{
       width: 0;

@@ -36,6 +36,24 @@ createApp({
 }).mount('#jossanApp')
 
 
+createApp({
+    data() {
+        return {
+            projectsMartin: [] // En tom array som kommer att hålla projektdata
+        }
+    },
+    // Denna del av koden körs när komponenten skapas
+        created() {
+            // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'
+            axios.get('projects.json') 
+            .then((response) => {
+                // När svar mottages, uppdatera 'projects' datan med den hämtade projektlistan
+                this.projectsMartin = response.data.projectsMartin;
+            }) 
+      }
+  }).mount('#martinApp')
+
+
 
 // Animation
 

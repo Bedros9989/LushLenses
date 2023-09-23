@@ -5,11 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LushLenses - Martin</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="personligSida.js" defer></script>
     <script src="hamburger.js" defer></script>
     <script src="produkter.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="logo-container">
+            <a href = "startsida.html"><img class ="logo" src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <ul id="menu">
+            <li><a href="produkter.html">Products</a></li>
+            <li><a href="anstallda.html">About us</a></li>
+            <li><a href="kontakt.html">Contact</a></li>
+        </ul>
+
+        <img class="cart" src="img/cart.svg" alt="cart">
+        <span id="cart-count-info">0</span>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <h1 class="personligrubrik1">Sales Manager</h1>
+    <h1 class="personligrubrik2">Martin</h1>
+
+    <div class="container-personligsida">
+        <div class="image-container">
+            <img class="image-personlig" src="img/martin.png" alt="Portrait Martin">
+        </div>
+        <div class="presentation-container">
+            <p>
+                I'm Martin, the Sales Manager on our dynamic team. My approach to sales leadership is rooted in a strategic mindset, aiming to forge lasting connections with both clients and our dedicated salesforce. I firmly believe in the art of relationship-building in sales, ensuring that our clients trust and rely on our solutions. My track record reflects my unwavering commitment, and I take immense pride in being a pivotal part of this exceptional team. 
+                <br> <br> Together, we've achieved remarkable milestones, and I'm invigorated by the journey ahead, brimming with exciting opportunities and challenges. With my steadfast dedication to excellence, I look forward to tackling them as we continue to elevate our sales efforts to new heights.
+            </p>
+        </div>
+        <div class="skills-container">
+            <h2 class="skillsprojekt-titel">Skills</h2>
+            <h3>Customer relationship management</h3>
+            <div class="skillruta-container">
+                <div class="skills martin1">95%</div>
+            </div>
+            <h3>Adabtability</h3>
+            <div class="skillruta-container">
+                <div class="skills martin2">70%</div>
+            </div>
+            <h3>Planning and forcasting</h3>
+            <div class="skillruta-container">
+                <div class="skills martin3">85%</div>
+            </div>
+        </div>
+    </div>
+
+    <h2>Projects</h2>
+
+    <section>
+        <div id="martinApp">
+            <div v-for="project in projectsMartin" class="popup">
+                <div class="project">
+                    <img class="personligthumb" :src="project.image" alt="">
+                    <h2 v-text="project.rubrik"></h2>
+                    <h3 v-text="project.underrubrik"></h3>
+                    <p class="projekttext" v-text="project.text"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© LushLenses 2023</p>
+    </footer>
 </body>
 </html>
