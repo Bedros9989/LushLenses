@@ -457,6 +457,21 @@ About us sidan
   animation-delay: 0.9s;
 }
 
+.bedros1 {
+  width: 95%; background-color: #252341;
+  animation-delay: 0.3s;
+}
+
+.bedros2 {
+  width: 70%; background-color: #252341;
+  animation-delay: 0.6s;
+}
+
+.bedros3 {
+  width: 85%; background-color: #252341;
+  animation-delay: 0.9s;
+}
+
 @keyframes progress {
   0%{
       width: 0;
@@ -513,6 +528,7 @@ width: 100%;
 
 .projekttext { /*p-klass för texten där man berättar om projektet. Egen klass pga egen padding*/
   padding-bottom: 20px;
+  text-align:justify;
 }
 
 /**********

@@ -54,7 +54,33 @@ createApp({
   }).mount('#martinApp')
 
 
+  createApp({
+    data() {
+        return {
+            projectsBedros: [] // En tom array som kommer att hålla projektdata
+        }
+    },
 
+    methods: {
+        renderText(text) { 
+            return text.replace(/\n/g, "<br>"); // Ersätter ny rad karakärer i HTML med line breaks
+        }
+    },
+
+    // Denna del av koden körs när komponenten skapas
+        created() {
+            // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'
+            axios.get('projects.json') 
+            .then((response) => {
+                // När svar mottages, uppdatera 'projects' datan med den hämtade projektlistan
+                this.projectsBedros = response.data.projectsBedros;
+            }) 
+      },
+
+      
+  }).mount('#bedrosApp')
+
+  
 // Animation
 
 const popup = () => {
