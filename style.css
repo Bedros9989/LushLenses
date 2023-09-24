@@ -499,6 +499,7 @@ About us sidan
   flex: 2;
   font-size: 17px;
   margin: 20px;
+  text-align: center;
 }
 
 .personligrubrik1{ /*Rubrik med arbetstitel, behövs egen h1 pga speciellt utseende*/
@@ -528,7 +529,11 @@ width: 100%;
 
 .projekttext { /*p-klass för texten där man berättar om projektet. Egen klass pga egen padding*/
   padding-bottom: 20px;
-  text-align:justify;
+  text-align: center;
+}
+
+.projektUnderrubrik{
+  text-align: center;
 }
 
 /**********
@@ -808,6 +813,14 @@ Personlig sida animation, stor skärm
   .column {
     min-height: 780px;
     }
+    
+  .projekttext { /*p-klass för texten där man berättar om projektet. Egen klass pga egen padding*/
+    text-align: justify;
+  }
+
+  .presentation-container { /*Container med presentationstexten*/
+    text-align: justify;
+  }
 
 /**********************************
 Produktsida

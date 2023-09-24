@@ -72,7 +72,7 @@
                 <div class="project">
                     <img class="personligthumb" :src="project.image" alt="">
                     <h2 v-text="project.rubrik"></h2>
-                    <h3 v-text="project.underrubrik"></h3>
+                    <h3 class="projektUnderrubrik" v-text="project.underrubrik"></h3>
                     <p class="projekttext" v-html="renderText(project.text)"></p>
                 </div>
             </div>
