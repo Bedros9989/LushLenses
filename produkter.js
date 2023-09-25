@@ -10,14 +10,24 @@ const productListApp = Vue.createApp({
   data() {
     return {
       products: [],
+      cart: [], // Array to store selected products
       count: 0
     };
   },
 
   methods: {
-    addToTheCart() {
-      this.count++;
+    addToTheCart(product) {
+      // Add the selected product to the cart array
+      this.cart.push(product);
+      
+      // Update the count based on the length of the cart array
+      this.count = this.cart.length;
       counter.textContent = this.count;
+
+      // Store the cart array in local storage as a JSON string
+      localStorage.setItem('cart', JSON.stringify(this.cart));
+
+      console.log(`Added to cart: ${product.name}`);
     },
   },
   watch: {
@@ -30,6 +40,15 @@ const productListApp = Vue.createApp({
   },
 
   mounted() {
+
+    // Retrieve the cart array from local storage and parse it
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      this.cart = JSON.parse(storedCart);
+      this.count = this.cart.length;
+      counter.textContent = this.count;
+    }
+
     fetch('products.json')
       .then(response => response.json())
       .then(data => {
@@ -47,7 +66,4 @@ const productListApp = Vue.createApp({
 
 });
 
-
-productListApp.mount('#app'); 
-
-
+productListApp.mount('#app');
