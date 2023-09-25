@@ -18,7 +18,7 @@
     {
       "id": 3,
       "name": "Pink F2023",
-      "description": "Our exclusive frames in a playful color",
+      "description": "Our exclusive frames in playful pink",
       "image": "img/pink5.png",
       "price": 350.00
     },
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "name": "Green F2023",
-      "description": "Our exclusive frames in a playful color",
+      "description": "Our exclusive frames in playful green",
       "image": "img/green3.png",
       "price": 350.00
     },
@@ -34,7 +34,7 @@
     {
       "id": 5,
       "name": "Black F2023",
-      "description": "Our exclusive frames in a rectangle shape",
+      "description": "Our exclusive frames in a rectangular shape",
       "image": "img/black2.png",
       "price": 350.00
     },
@@ -42,7 +42,7 @@
     {
       "id": 6,
       "name": "Orange and Blue F2023",
-      "description": "Our exclusive frames in a playful color",
+      "description": "Our exclusive frames in playful bluerange",
       "image": "img/orangeblue4.png",
       "price": 350.00
     }
