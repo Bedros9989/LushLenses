@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Yellow F2023",
-      "description": "Yellow sunglasses",
+      "description": "Our exclusive frames in a round shape",
       "image": "img/yellow6.png",
       "price": 350.00
     },
@@ -10,7 +10,7 @@
     {
       "id": 2,
       "name": "Black and Gold F2023",
-      "description": "exfdj",
+      "description": "Our exclusive frames in a cat eye shape",
       "image": "img/black1.png",
       "price": 350.00
     },
@@ -18,7 +18,7 @@
     {
       "id": 3,
       "name": "Pink F2023",
-      "description": "exfdj",
+      "description": "Our exclusive frames in a playful color",
       "image": "img/pink5.png",
       "price": 350.00
     },
@@ -26,7 +26,7 @@
     {
       "id": 4,
       "name": "Green F2023",
-      "description": "exfdj",
+      "description": "Our exclusive frames in a playful color",
       "image": "img/green3.png",
       "price": 350.00
     },
@@ -34,7 +34,7 @@
     {
       "id": 5,
       "name": "Black F2023",
-      "description": "exfdj",
+      "description": "Our exclusive frames in a rectangle shape",
       "image": "img/black2.png",
       "price": 350.00
     },
@@ -42,7 +42,7 @@
     {
       "id": 6,
       "name": "Orange and Blue F2023",
-      "description": "exfdj",
+      "description": "Our exclusive frames in a playful color",
       "image": "img/orangeblue4.png",
       "price": 350.00
     }
