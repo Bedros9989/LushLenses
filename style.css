@@ -613,8 +613,6 @@ section {
 }
 
 #btn-cart {
-    background: transparent;
-    border: 1px solid #252341;
     padding: 0.8rem 0;
     width: 150px;
     font-family: inherit;
@@ -622,18 +620,14 @@ section {
     cursor: pointer;
     border: none;
     transition: all 0.6s ease;
-    
-
-}
-#btn-cart{
     background: #252341;
     color: white;
-    
-}
+  }
+
 
 #btn-cart:hover{
-    background: #252341;
-    
+    color: #CBA84E;
+    letter-spacing: 1px;
 }
 
 .product-info{
