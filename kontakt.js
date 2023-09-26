@@ -25,15 +25,13 @@
       messageTextarea.addEventListener("blur", validateMessage);
   });
 
-    // Valideringsfunktioner för varje fält
-    
+    // Valideringsfunktioner för varje fält  
     function validateFirstName() {
         const firstNameInput = document.getElementById("firstName");
      
-
         if (firstNameInput.value === "") {
             displayError("firstNameError", "First name is required");
-        } else if (!/^[A-Za-z]+$/.test(firstNameInput.value)) {
+        } else if (!/^[A-Za-zéáåäöÉÁÅÄÖ]+$/.test(firstNameInput.value)) {
             displayError("firstNameError", "First name can only contain letters");
         } else {
             clearError("firstNameError");
@@ -43,10 +41,9 @@
     function validateLastName() {
         const lastNameInput = document.getElementById("lastName");
        
-
         if (lastNameInput.value === "") {
             displayError("lastNameError", "Last name is required");
-          } else if (!/^[A-Za-z]+$/.test(lastNameInput.value)) {
+          } else if (!/^[A-Za-zéáåäöÉÁÅÄÖ]+$/.test(lastNameInput.value)) {
             displayError("lastNameError", "Last name can only contain letters");
         } else {
             clearError("lastNameError");

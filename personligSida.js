@@ -3,76 +3,67 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            projectsSofie: [] // En tom array som kommer att hålla projektdata
+            projectsSofie: [] 
         }
     },
-    // Denna del av koden körs när komponenten skapas
+    // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'. 
+    // Hanterar automatiskt omvandlingen av svar till JSON-format.
         created() {
-            // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'
             axios.get('projects.json') 
             .then((response) => {
-                // När svar mottages, uppdatera 'projects' datan med den hämtade projektlistan
                 this.projectsSofie = response.data.projectsSofie;
             }) 
       }
   }).mount('#sofieApp')
 
+
   
 createApp({
   data() {
       return {
-          projectsJossan: [] // En tom array som kommer att hålla projektdata
+          projectsJossan: [] 
       }
   },
-  // Denna del av koden körs när komponenten skapas
       created() {
-          // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'
           axios.get('projects.json') 
           .then((response) => {
-              // När svar mottages, uppdatera 'projects' datan med den hämtade projektlistan
               this.projectsJossan = response.data.projectsJossan;
           }) 
     }
 }).mount('#jossanApp')
 
 
+
 createApp({
     data() {
         return {
-            projectsMartin: [] // En tom array som kommer att hålla projektdata
+            projectsMartin: [] 
         }
     },
-    // Denna del av koden körs när komponenten skapas
         created() {
-            // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'
             axios.get('projects.json') 
             .then((response) => {
-                // När svar mottages, uppdatera 'projects' datan med den hämtade projektlistan
                 this.projectsMartin = response.data.projectsMartin;
             }) 
       }
   }).mount('#martinApp')
 
 
+
   createApp({
     data() {
         return {
-            projectsBedros: [] // En tom array som kommer att hålla projektdata
+            projectsBedros: [] 
         }
     },
-
     methods: {
         renderText(text) { 
             return text.replace(/\n/g, "<br>"); // Ersätter ny rad karakärer i HTML med line breaks
         }
     },
-
-    // Denna del av koden körs när komponenten skapas
         created() {
-            // Gör en HTTP GET-förfrågan med Axios för att hämta data från 'projects.json'
             axios.get('projects.json') 
             .then((response) => {
-                // När svar mottages, uppdatera 'projects' datan med den hämtade projektlistan
                 this.projectsBedros = response.data.projectsBedros;
             }) 
       },
@@ -82,6 +73,9 @@ createApp({
 
   
 // Animation
+// Inuti funktionen hämtar den alla element på sidan med klassen "popup". 
+// Vi loopar igenom elementen och kontrollerar om de är tillräckligt nära toppen av webbläsarfönstret.
+
 
 const popup = () => {
     const popups = document.querySelectorAll(".popup");

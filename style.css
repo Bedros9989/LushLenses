@@ -323,10 +323,6 @@ About us sidan
       justify-content: center;
     }
 
-    .flexItem {
-      align-items: stretch;
-    }
-
     .column {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;        
       padding: 1em;
@@ -334,7 +330,6 @@ About us sidan
 
     .thumb { /*Våra portträttbilder på About us*/
       width: 100%;
-  
     }
 
    .namn { /*Egen h2-klass pga annan margin*/
@@ -488,9 +483,7 @@ About us sidan
   margin: 30px;
 }
 
-.image-personlig { /*Bilden på sig själv*/
-  display: block;
-  margin: auto;
+.image-personlig { 
   width: 100%;
   border-radius: 0% 20% 0% 20%;
 }
@@ -499,7 +492,6 @@ About us sidan
   flex: 2;
   font-size: 17px;
   margin: 20px;
-  text-align: center;
 }
 
 .personligrubrik1{ /*Rubrik med arbetstitel, behövs egen h1 pga speciellt utseende*/
@@ -529,7 +521,6 @@ width: 100%;
 
 .projekttext { /*p-klass för texten där man berättar om projektet. Egen klass pga egen padding*/
   padding-bottom: 20px;
-  text-align: center;
 }
 
 .projektUnderrubrik{
@@ -824,7 +815,7 @@ Produktsida
   grid-template-columns: repeat(3, 1fr);
 }
 
-    }
+}
 
  
 

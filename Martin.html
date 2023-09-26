@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LushLenses - Martin</title>
     <link rel="stylesheet" href="style.css"/>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="personligSida.js" defer></script>
     <script src="hamburger.js" defer></script>
     <script src="produkter.js" defer></script>
@@ -48,7 +48,7 @@
             </p>
         </div>
         <div class="skills-container">
-            <h2 class="skillsprojekt-titel">Skills</h2>
+            <h2>Skills</h2>
             <h3>Relationship management</h3>
             <div class="skillruta-container">
                 <div class="skills martin1">95%</div>
@@ -66,11 +66,12 @@
 
     <h2>Projects</h2>
 
+     <!-- Hämtar projektet från JSON-filen genom att använda en for-loop -->
     <section>
         <div id="martinApp">
             <div v-for="project in projectsMartin" class="popup">
                 <div class="project">
-                    <img class="personligthumb" :src="project.image" alt="">
+                    <img class="personligthumb" :src="project.image" alt="bild">
                     <h2 v-text="project.rubrik"></h2>
                     <h3 v-text="project.underrubrik"></h3>
                     <p class="projekttext" v-text="project.text"></p>

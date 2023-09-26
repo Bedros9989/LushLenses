@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LushLenses - Jossan</title>
-    <link rel="stylesheet" href="style.css"/><!--lägger till stilmallen-->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://unpkg.com/vue@3"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="personligSida.js" defer></script>
     <script src="hamburger.js" defer></script>
@@ -71,11 +71,12 @@
     <h2>Projects</h2>
 
 
+     <!-- Hämtar projektet från JSON-filen genom att använda en for-loop -->
     <section>
     <div id="jossanApp">
         <div v-for="project in projectsJossan" class="popup">
             <div class="project">
-                    <img class="personligthumb" :src="project.image" alt ="">
+                    <img class="personligthumb" :src="project.image" alt ="bild">
                     <h2 v-text="project.rubrik"></h2>
                     <h3 v-text="project.underrubrik"></h3>
                     <p class="projekttext" v-text="project.text"></p>
